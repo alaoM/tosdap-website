@@ -5,6 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="./images/logo/favicon.png" type="image/x-icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tosdap</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
@@ -22,6 +23,7 @@
   <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
   <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
   <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/w3.css" type="text/css" rel="stylesheet" />
   <noscript>
     <style type="text/css">
       [data-aos] {
@@ -46,6 +48,31 @@
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+
+            <li class="dropdown dropdown-submenu">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
+                Forms </i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" role="menu">
+                <li class="nav-item">
+                  <a class="nav-link" id="applicationModalButton" style="cursor:pointer; font-weight: 400;">Driver's
+                    Application</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="verificationModalButton" style="cursor:pointer; font-weight: 400;">Driver's
+                    Verification</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="policyModalButton" style="cursor:pointer; font-weight: 400;">Driver's
+                    Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="agreementModalButton" style="cursor:pointer; font-weight: 400;"> Driver's
+                    Agreement</a>
+                </li>
+              </ul>
+            </li>
+
             <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul><a class="btn btn-primary" href="#contact">Get Started</a>
@@ -70,289 +97,288 @@
                   <div class="mt-3" data-aos="fade-up" data-aos-delay="200">
                     <a class="btn btn-primary shadow-sm mt-1 me-2" href="#contact">Get Sarted <i
                         class="fas fa-arrow-right ms-1"></i></a>
-                    <!-- <button onclick="document.getElementById('T&Cmodal')" class="btn btn-outline-secondary mt-1"><i
-                        class="fas fa-book-open"></i> Terms and Conditions</button> -->
-                    <button type="button" class="btn btn-outline-secondary mt-1" data-toggle="modal"
-                      data-target="#exampleModalLong"><i class="fas fa-book-open"></i> Terms and Conditions</button>
+                    <button type="button" class="btn btn-outline-secondary mt-1" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"><i class="fas fa-book-open"></i> Terms and Conditions</button>
                   </div>
-
                 </div>
               </div>
               <div class="col-lg-6 p-3 pe-lg-0" data-aos="fade-left" data-aos-delay="100"><img class="pt-2 img-fluid"
                   src="images/illustrations/drive.svg" alt="drive" /></div>
             </div>
           </div>
-          <!-- modal -->
-          <div class="modal" id="T&Cmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+
+          <!-- Modal -->
+          <div class="modal fade" tabindex="-1" id="exampleModal" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
-            <div class=" modal fade modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
               <div class="modal-content">
-                <div class="modal-header text-center">
-                  <h1 class="modal-title text-center" id="exampleModalLongTitle">TOSDAP CALLED DRIVERS</h1>
-                  <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div class="modal-header">
+                  <div class="modal-title" id="exampleModalLabel">
+                    <h3><b>TOSDAP CALLED DRIVERS</b></h3>
+                    <h5><b>TERMS AND CONDITIONS OF SERVICE</b></h5>
+                  </div>
 
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="text-center">
-                  <h3>TERMS AND CONDITIONS OF SERVICES</h3>
-                </div>
-                <div class="modal-body text-justified">
+                <div class="modal-body">
 
-                  <h5>DEFINITIONS</h5>
-
-                  <h6>CLIENT/CUSTOMER/EMPLOYER</h6>
-                  An individual or organization willing to hire a driver for a specific purpose.
-                  <h6>COMPANY/SERVICE PROVIDER</h6>
-                  TOSDAP CALLED DRIVER charged providing and rending professionally trained and vetted drivers
-                  to persons and organizations in need of their services.
-                  <h6>SERVICE</h6>
-                  Providing quick access to already verified and professionally trained drivers for recruitment
-                  on demand and in a specific time.
-                  <h6>DRIVER</h6>
-                  A person who has been professionally oriented and vetted to render service as a professional
-                  driver. The two categories of Drivers are;
-                  <ul>
-                    <li>SHORT TERM DRIVERS</li>
-                    Drivers who provide their driving service on a short term or temporary basis to
-                    Client/Customer/Employer.
-
-                    <li>FULL TERM DRIVERS</li>
-                    Drivers who provide their driving service on a long-term basis to Client/Customer/Employer.
-                  </ul>
-                  <h6>DRIVER’S ENGAGEMENT</h6>
-
-                  The way the services of the drivers provided are being utilized by Client/Customer/Employer.
-                  The types of driver’s engagement are;
-                  <ul>
-                    <li> SHORT TERM DRIVER’S ENGAGEMENT</li>
-                    The engagement of drivers on short term basis via bookings. The company/service provider
-                    shall be responsible for confirming Client/Customer/Employer booking with follow-ups on such
-                    bookings.
-                    <li>FULL TERM DRIVER’S ENGAGEMENT</li>
-                    The engagement of drivers on a long-term basis include:
-                  </ul>
-                  <ol>
-                    <li>Outsourced Staffing engagement:</li>
-                    Drivers are engaged on a mutual understanding and agreement that the company/service
-                    provider shall be responsible for the driver’s salary during service provision for the
-                    Client/Customer/Employer.
-                    <li>STIPULATED TIME</li>
-                    This is a specified and agreed time within which the service is to be carried out.
-                  </ol>
-                  <h6>VALUATION PROPOSITION TO USERS OF SHORT TIME DRIVERS</h6>
-                  <ol>
-                    <li>Payment of a service charge for access to driver’s provision.</li>
-                    <li>A verified and trained driver comes in after confirmation of payment for the short term
-                      or temporary job, well dressed and must have an identification card from the
-                      Company/service provider for proper identification.</li>
-                    <li>Payment per use to the company for service of driver.</li>
-                  </ol>
-
-                  <h6>VALUATION PROPOSITION TO USERS OF FULL TIME DRIVERS</h6>
-                  <ol>
-                    <li> Payment of service charge for access to driver’s provision.</li>
-                    <li> Monthly rates will be paid to the company’s account and the drivers will be rated
-                      accordingly based on their performance for the month. </li>
-                  </ol>
-                  <h6> FURTHER INFORMATION</h6>
-                  <ul>
-                    <li>Resumption and closing time for driver’s operation</li>
-                    <li>Monday to Friday (7am to 7pm)</li>
-                    <li>Our driver’s style of driving is defensive and safety driving</li>
-                    <li>Our drivers comply with the FRSC speed limit standard which is 90KM/H</li>
-                  </ul>
-                  <h6>PROCESS FOR HIRING FULL TIME DRIVERS</h6>
-                  <p>Hiring a professionally trained and vetted driver;</p>
-                  <ul>
-                    <li>Via STARPLAN</li>
-                  </ul>
-                  <ol>
-                    <li>Fill in all requirements and select your preferred salary structure.</li>
-                    <li>Pay a ONE-OFF upfront service charge of #10,000</li>
-                    <li>Get a driver that matches your requirement in 24hours from time of request.</li>
-                    <li>Carry out a 72hours driver’s compatibility assessment.</li>
-                    <li>Employ when satisfied with the driver skills and compatibility (we have a record of
-                      over 85% driver to employer match at first attempt)</li>
-                    <li>We provide the employer with the following</li>
+                  <div class="text-secondary">
+                    <u>
+                      <h5><b>DEFINITIONS</b></h5>
+                    </u>
+                    <h6>CLIENT/CUSTOMER/EMPLOYER</h6>
+                    An individual or organization willing to hire a driver for a specific purpose.
+                    <h6>COMPANY/SERVICE PROVIDER</h6>
+                    TOSDAP CALLED DRIVER charged providing and rending professionally trained and vetted drivers
+                    to persons and organizations in need of their services.
+                    <h6>SERVICE</h6>
+                    Providing quick access to already verified and professionally trained drivers for recruitment
+                    on demand and in a specific time.
+                    <h6>DRIVER</h6>
+                    A person who has been professionally oriented and vetted to render service as a professional
+                    driver. The two categories of Drivers are;
                     <ul>
-                      <li>Guarantor’s comprehensive details</li>
-                      <li>Guarantor’s confidential letter </li>
-                      <li>Complete drivers’ profile</li>
+                      <li>SHORT TERM DRIVERS</li>
+                      Drivers who provide their driving service on a short term or temporary basis to
+                      Client/Customer/Employer.
+
+                      <li>FULL TERM DRIVERS</li>
+                      Drivers who provide their driving service on a long-term basis to Client/Customer/Employer.
                     </ul>
-                    <li>We replace sent driver if not satisfactory </li>
-                    <li>Client/Customer/Employer shall be required to rate drivers on a daily/weekly/monthly
-                      basis</li>
-                    <li>Monthly salaries shall be made to company’s account five (5) days before the end of
-                      every month.</li>
-                  </ol>
-                  <h5>TAKE NOTICE:</h5>
-                  How to use professionally trained and vetted drivers on TOSDAP CALLED DRIVER platform
-                  <ol>
-                    <li>Drivers are only to be used for driving as stated within the scope of their job
-                      description. </li>
-                    <li>Discussions with drivers shall be centered on their duties to serve you better and
-                      not on personal issues</li>
-                    <li>Professionalism requires that the Client/Customer/Employer properly consider
-                      suggestions, contributions and advise that driver may offer concerning CAR CARE</li>
-                    <li>Client/Customer/Employer shall treat driver as professionals and with respect.
-                      Maltreatment of any form shall not be condoned</li>
-                    <li>Client/Customer/Employer shall not convert the provided professional driver role
-                      (which is driving and car care) into another use.</li>
-                    <li>Fair judgment should be exercised when relating with drivers from our platform.
-                    </li>
-                    <li>All forms of assaults, such as sexual assaults, physical assaults, verbal assaults,
-                      etc. are to be avoided. As a professional driver, he/she is required to drive you
-                      safely and ensure CAR CARE. </li>
-                    <li>Client/Customer/Employer shall ensure that either comprehensive insurance cover or
-                      at least third-party insurance cover is on the said vehicle and that the vehicle
-                      particulars are available and valid.</li>
-                  </ol>
-                  <h5>RESPONSIBILITIES AND OBLIGATIONS</h5>
-                  <ol>
-                    <li>The Company/Service Provider shall be responsible to provide driver’s guarantors
-                      upon being held liable for theft or deliberate damage of Client/Customer/Employer’s
-                      vehicle by the appointed driver.</li>
-                    <li>Client/Customer/Employer shall ensure that either comprehensive insurance cover or
-                      at least third-party insurance is on the said vehicle. </li>
-                    <li>The Client/Customer/Employer shall ensure that the vehicle to be used under this
-                      service delivery has been equipped with all the required safety tools (fire
-                      extinguisher, C caution, jerk, first aid box, etc.) </li>
-                    <li>Client/Customer/Employer shall ensure that the said vehicle is duly registered and
-                      all the vehicle papers/documents are up to date. </li>
-                    <li>Client/Customer/Employer shall ensure that the said vehicle is duly maintained for
-                      optimal performance.</li>
-                    <li>The Company/Service Provider and or its Driver shall not be held liable in the event
-                      that the vehicle has not being registered, maintained and or its papers renewed.</li>
-                    <li>Client/Customer/Employer shall release her driver for re-training, update sessions
-                      programs at required times.</li>
-                    <li>Client/Customer/Employer shall ensure that the driver’s salary is paid through the
-                      company’s account on or before five (5) days to month ending.</li>
-                    <li>Drivers shall not have any access to employer’s contact except express permission by
-                      Client/Customer/Employer and vice versa.</li>
-                    <li>Client/Customer/Employer shall read and understand how to use a professional driver
-                      from the Company’s policy above.</li>
-                  </ol>
-                  <h5>FINANCIAL OBLIGATION, REFUND & PAYMENT</h5>
-                  <ol>
-                    <li>Payment shall be completed before compatibility assessment of driver is carried out
-                      within one to three days.</li>
-                    <li>Driver’s salary shall be paid into Company account, while Company shall pay driver’s
-                      salaries at month end.</li>
-                    <li>The mode of payment is prepaid and it’s a one-off service charge set at #10,000 for
-                      STAR SERVICE.</li>
-                    <li>Driver can only resume at appointment when the Client/Customer/Employer has
-                      fulfilled all financial obligations approved to Company/Service provider.</li>
-                    <li>Refund shall only be made when the Company/Service Provider has failed to meet up
-                      its obligation, or client is dissatisfied with the service rendered PROVIDED THAT
-                      where the Client/Customer/Employer has been served by the Company/service provider and
-                      still wants a refund it shall not be more than a <b>50%</b> refund, while where the
-                      Client/Customer/Employer has not been served at all or obligation not met or the
-                      Client/Customer/Employer can no longer bear with the Company/Service Provider or the
-                      Company/Service Provider cannot meet up within the agreed time, as requested by the
-                      Client/Customer/Employer, there shall be a refund of not more than <b>75%</b>as the
-                      other
-                      <b>25%</b>or more covers cost of mobilization, search and matching.
-                    </li>
-                    <li>Where the Company/Service Provider determines that a refund request is valid,
-                      reasonable efforts shall be made to grant the refund request.</li>
-                    <li><b>
-                        <p>Account Name: TOSDAP CALLED DRIVER</p>
-                        <p>Bank: UBA</p>
-                        <p>Account Number: 1023843823</p>
-                      </b>
-                  </ol>
-                  <h5>CONTRACT POLICY</h5>
-                  <ol>
-                    <li>Client/Customer/Employer shall indicate to the Company/service provider the number
-                      of months for which service will be needed and shall honor the stipulated terms of
-                      contract.</li>
-                    <li>Client/Customer/Employer shall give Company/service provider a minimum of 2 weeks’
-                      notice for any request for change of driver for any reason.</li>
-                    <li>In a situation, where the Client/Customer/Employer request for change of driver,
-                      request shall only be granted when contract has been honored by
-                      Client/Customer/Employer.</li>
-                    <li>In a situation where the Client/Customer/Employer has genuinely admitted inability
-                      to honor the contract agreement and pushes for a change/replacement before the
-                      expiration of Driver’s contract, Client/Customer/Employer shall compensate/pay driver
-                      for all the days the driver has worked and an additional 25% of Driver’s salary shall
-                      be required as service charge if Client/Customer/Employer shall still require a
-                      replacement</li>
-                    <li>In a situation, where the Driver decides not to honor the stipulated amount of time
-                      stated by the contract and leaves, the Driver shall not be entitled to be
-                      compensated/paid for days worked for and shall forfeit his pay.</li>
-                  </ol>
-                  <h5>DISCOUNT ON SERVICE CHARGE & ALLOWABLE SERVICE</h5>
-                  <ol>
+                    <h6>DRIVER’S ENGAGEMENT</h6>
 
-                    <li>Client/Customer/Employer is allowed to make a <b>50%</b> upfront payment for
-                      activation of
-                      service delivery and complete payment after driver’s matching is completed.</li>
-                    <li>5% discount is permissible on service charge across board.</li>
-                    <li>Driver’s salary can be paid to company/service provider at the beginning of a new
-                      month for payment to be made early to driver, but salary must come in <b>five (5)
-                        days</b> to the end of the month or as and when due.</li>
-                    <li>Separate Driver compensation allowance (travelling allowance or overtime) shall be
-                      made available to cover inter-state travelling, longer stay after agreed closing time
-                      and other sundries respectively as the case may be.</li>
-                  </ol>
-                  <h5>SERVICE CHARGE & PRICING FOR SHORT-TERM/TEMPORARY SERVICE</h5>
-                  <b>All service charges must be paid through us before commencement of service.
-                    <p>NB:
-                  </b> Service charge paid directly to Driver to the exclusion of TOSDAP CALLED DRIVER makes
-                  such Customer or Driver liable for any consequences for their actions.</p>
+                    The way the services of the drivers provided are being utilized by Client/Customer/Employer.
+                    The types of driver’s engagement are;
+                    <ul>
+                      <li> SHORT TERM DRIVER’S ENGAGEMENT</li>
+                      The engagement of drivers on short term basis via bookings. The company/service provider
+                      shall be responsible for confirming Client/Customer/Employer booking with follow-ups on such
+                      bookings.
+                      <li>FULL TERM DRIVER’S ENGAGEMENT</li>
+                      The engagement of drivers on a long-term basis include:
+                    </ul>
+                    <ol>
+                      <li>Outsourced Staffing engagement:</li>
+                      Drivers are engaged on a mutual understanding and agreement that the company/service
+                      provider shall be responsible for the driver’s salary during service provision for the
+                      Client/Customer/Employer.
+                      <li>STIPULATED TIME</li>
+                      This is a specified and agreed time within which the service is to be carried out.
+                    </ol>
+                    <h6>VALUATION PROPOSITION TO USERS OF SHORT TIME DRIVERS</h6>
+                    <ol>
+                      <li>Payment of a service charge for access to driver’s provision.</li>
+                      <li>A verified and trained driver comes in after confirmation of payment for the short term
+                        or temporary job, well dressed and must have an identification card from the
+                        Company/service provider for proper identification.</li>
+                      <li>Payment per use to the company for service of driver.</li>
+                    </ol>
 
-                  <h5>FINANCIAL OBLIGATION, REFUND & PAYMENT FOR SHORT-TERM/TEMPORARY SERVICE</h5>
-                  <ol>
-                    <li>Payment is completed before provision of professional Driver’s availability is
-                      made.</li>
-                    <li>Service charge shall be made upfront through the Company/Service Provider.</li>
-                    <li>The mode of payment is prepaid.</li>
-                    <li>Driver can only resume at appointment when the Client/Customer/Employer has
-                      fulfilled all financial obligation approved to the Company/Service Provider.</li>
-                    <li>Refund is only possible when the Company/Service Provider has failed to meet up
-                      its obligations, or the Client/Customer/Employer is dissatisfied with the service
-                      rendered <b>PROVIDED THAT</b> where the Client/Customer/Employer has been served
-                      by the Company/Service Provider and still wants a refund he shall be entitled to
-                      not more than a <b>50%</b> refund, while where the Company/Service Provider has
-                      not been served at all or expectations are not met or the Client/Customer/Employer
-                      can no longer bear with the Company/Service Provider or the Company/Service
-                      Provider cannot meet up within promised time, as requested by
-                      Client/Customer/Employer, there shall be a refund of not more than <b>75%</b> as
-                      the other <b>25%</b> or more covers cost of mobilization, search and matching.
-                    </li>
-                    <li>Where the Company/Service Provider determines that a refund request is valid,
-                      reasonable efforts shall be made to grant the refund request.</li>
-                    <h5>CONTRACT POLICY</h5>
-                    <li>Client/Customer/Employer is required to signify the purpose of the short
-                      term/temporary services expressly.</li>
-                    <li>The Company/Service Provider shall be responsible for paying ALL drivers on its
-                      platform their wages for services carried out.</li>
-                  </ol>
-                  <h5>DISCOUNT ON SERVICE CHARGE & ALLOWABLE SERVICE</h5>
-                  <ol>
-                    <li>Client/Customer/Employer can make a <b>50%</b> upfront payment for activation of
-                      service delivery and complete payment after driver’s matching is completed.</li>
-                    <li><b>5%</b> discount is permissible on service charge across board.</li>
-                  </ol>
+                    <h6>VALUATION PROPOSITION TO USERS OF FULL TIME DRIVERS</h6>
+                    <ol>
+                      <li> Payment of service charge for access to driver’s provision.</li>
+                      <li> Monthly rates will be paid to the company’s account and the drivers will be rated
+                        accordingly based on their performance for the month. </li>
+                    </ol>
+                    <h6> FURTHER INFORMATION</h6>
+                    <ul>
+                      <li>Resumption and closing time for driver’s operation</li>
+                      <li>Monday to Friday (7am to 7pm)</li>
+                      <li>Our driver’s style of driving is defensive and safety driving</li>
+                      <li>Our drivers comply with the FRSC speed limit standard which is 90KM/H</li>
+                    </ul>
+                    <h6>PROCESS FOR HIRING FULL TIME DRIVERS</h6>
+                    <p>Hiring a professionally trained and vetted driver;</p>
+                    <ul>
+                      <li>Via STARPLAN</li>
+                    </ul>
+                    <ol>
+                      <li>Fill in all requirements and select your preferred salary structure.</li>
+                      <li>Pay a ONE-OFF upfront service charge of #10,000</li>
+                      <li>Get a driver that matches your requirement in 24hours from time of request.</li>
+                      <li>Carry out a 72hours driver’s compatibility assessment.</li>
+                      <li>Employ when satisfied with the driver skills and compatibility (we have a record of
+                        over 85% driver to employer match at first attempt)</li>
+                      <li>We provide the employer with the following</li>
+                      <ul>
+                        <li>Guarantor’s comprehensive details</li>
+                        <li>Guarantor’s confidential letter </li>
+                        <li>Complete drivers’ profile</li>
+                      </ul>
+                      <li>We replace sent driver if not satisfactory </li>
+                      <li>Client/Customer/Employer shall be required to rate drivers on a daily/weekly/monthly
+                        basis</li>
+                      <li>Monthly salaries shall be made to company’s account five (5) days before the end of
+                        every month.</li>
+                    </ol>
+                    <h5><b><u>TAKE NOTICE:</u></b></h5>
+                    How to use professionally trained and vetted drivers on TOSDAP CALLED DRIVER platform
+                    <ol>
+                      <li>Drivers are only to be used for driving as stated within the scope of their job
+                        description. </li>
+                      <li>Discussions with drivers shall be centered on their duties to serve you better and
+                        not on personal issues</li>
+                      <li>Professionalism requires that the Client/Customer/Employer properly consider
+                        suggestions, contributions and advise that driver may offer concerning CAR CARE</li>
+                      <li>Client/Customer/Employer shall treat driver as professionals and with respect.
+                        Maltreatment of any form shall not be condoned</li>
+                      <li>Client/Customer/Employer shall not convert the provided professional driver role
+                        (which is driving and car care) into another use.</li>
+                      <li>Fair judgment should be exercised when relating with drivers from our platform.
+                      </li>
+                      <li>All forms of assaults, such as sexual assaults, physical assaults, verbal assaults,
+                        etc. are to be avoided. As a professional driver, he/she is required to drive you
+                        safely and ensure CAR CARE. </li>
+                      <li>Client/Customer/Employer shall ensure that either comprehensive insurance cover or
+                        at least third-party insurance cover is on the said vehicle and that the vehicle
+                        particulars are available and valid.</li>
+                    </ol>
+                    <h5><b><u>RESPONSIBILITIES AND OBLIGATIONS</u></b></h5>
+                    <ol>
+                      <li>The Company/Service Provider shall be responsible to provide driver’s guarantors
+                        upon being held liable for theft or deliberate damage of Client/Customer/Employer’s
+                        vehicle by the appointed driver.</li>
+                      <li>Client/Customer/Employer shall ensure that either comprehensive insurance cover or
+                        at least third-party insurance is on the said vehicle. </li>
+                      <li>The Client/Customer/Employer shall ensure that the vehicle to be used under this
+                        service delivery has been equipped with all the required safety tools (fire
+                        extinguisher, C caution, jerk, first aid box, etc.) </li>
+                      <li>Client/Customer/Employer shall ensure that the said vehicle is duly registered and
+                        all the vehicle papers/documents are up to date. </li>
+                      <li>Client/Customer/Employer shall ensure that the said vehicle is duly maintained for
+                        optimal performance.</li>
+                      <li>The Company/Service Provider and or its Driver shall not be held liable in the event
+                        that the vehicle has not being registered, maintained and or its papers renewed.</li>
+                      <li>Client/Customer/Employer shall release her driver for re-training, update sessions
+                        programs at required times.</li>
+                      <li>Client/Customer/Employer shall ensure that the driver’s salary is paid through the
+                        company’s account on or before five (5) days to month ending.</li>
+                      <li>Drivers shall not have any access to employer’s contact except express permission by
+                        Client/Customer/Employer and vice versa.</li>
+                      <li>Client/Customer/Employer shall read and understand how to use a professional driver
+                        from the Company’s policy above.</li>
+                    </ol>
+                    <h5><b><u>FINANCIAL OBLIGATION, REFUND & PAYMENT</u></b></h5>
+                    <ol>
+                      <li>Payment shall be completed before compatibility assessment of driver is carried out
+                        within one to three days.</li>
+                      <li>Driver’s salary shall be paid into Company account, while Company shall pay driver’s
+                        salaries at month end.</li>
+                      <li>The mode of payment is prepaid and it’s a one-off service charge set at #10,000 for
+                        STAR SERVICE.</li>
+                      <li>Driver can only resume at appointment when the Client/Customer/Employer has
+                        fulfilled all financial obligations approved to Company/Service provider.</li>
+                      <li>Refund shall only be made when the Company/Service Provider has failed to meet up
+                        its obligation, or client is dissatisfied with the service rendered PROVIDED THAT
+                        where the Client/Customer/Employer has been served by the Company/service provider and
+                        still wants a refund it shall not be more than a <b>50%</b> refund, while where the
+                        Client/Customer/Employer has not been served at all or obligation not met or the
+                        Client/Customer/Employer can no longer bear with the Company/Service Provider or the
+                        Company/Service Provider cannot meet up within the agreed time, as requested by the
+                        Client/Customer/Employer, there shall be a refund of not more than <b>75%</b>as the
+                        other
+                        <b>25%</b>or more covers cost of mobilization, search and matching.
+                      </li>
+                      <li>Where the Company/Service Provider determines that a refund request is valid,
+                        reasonable efforts shall be made to grant the refund request.</li>
+                      <li><b>
+                          <p>Account Name: TOSDAP CALLED DRIVER</p>
+                          <p>Bank: UBA</p>
+                          <p>Account Number: 1023843823</p>
+                        </b>
+                    </ol>
+                    <h5><b><u>CONTRACT POLICY</u></b></h5>
+                    <ol>
+                      <li>Client/Customer/Employer shall indicate to the Company/service provider the number
+                        of months for which service will be needed and shall honor the stipulated terms of
+                        contract.</li>
+                      <li>Client/Customer/Employer shall give Company/service provider a minimum of 2 weeks’
+                        notice for any request for change of driver for any reason.</li>
+                      <li>In a situation, where the Client/Customer/Employer request for change of driver,
+                        request shall only be granted when contract has been honored by
+                        Client/Customer/Employer.</li>
+                      <li>In a situation where the Client/Customer/Employer has genuinely admitted inability
+                        to honor the contract agreement and pushes for a change/replacement before the
+                        expiration of Driver’s contract, Client/Customer/Employer shall compensate/pay driver
+                        for all the days the driver has worked and an additional 25% of Driver’s salary shall
+                        be required as service charge if Client/Customer/Employer shall still require a
+                        replacement</li>
+                      <li>In a situation, where the Driver decides not to honor the stipulated amount of time
+                        stated by the contract and leaves, the Driver shall not be entitled to be
+                        compensated/paid for days worked for and shall forfeit his pay.</li>
+                    </ol>
+                    <h5><b><u>DISCOUNT ON SERVICE CHARGE & ALLOWABLE SERVICE</u></b></h5>
+                    <ol>
 
-                  <p>I,.................................OF............................THE USER
-                    (CLIENT/CUSTOMER/EMPLOYER) HEREBY ACKNOWLEDGE TO HAVE READ AND AGREED TO THIS TERMS
-                    AND CONDITIONS OF USE IN USING ………………………………………………………….. (TYPE OF SERVICE) OFFERED
-                    AND RENDERED BY THE COMPANY/SERVICE PROVIDER.</p>
+                      <li>Client/Customer/Employer is allowed to make a <b>50%</b> upfront payment for
+                        activation of
+                        service delivery and complete payment after driver’s matching is completed.</li>
+                      <li>5% discount is permissible on service charge across board.</li>
+                      <li>Driver’s salary can be paid to company/service provider at the beginning of a new
+                        month for payment to be made early to driver, but salary must come in <b>five (5)
+                          days</b> to the end of the month or as and when due.</li>
+                      <li>Separate Driver compensation allowance (travelling allowance or overtime) shall be
+                        made available to cover inter-state travelling, longer stay after agreed closing time
+                        and other sundries respectively as the case may be.</li>
+                    </ol>
+                    <h5><b><u>SERVICE CHARGE & PRICING FOR SHORT-TERM/TEMPORARY SERVICE</u></b></h5>
+                    <b>All service charges must be paid through us before commencement of service.
+                      <p>NB:
+                    </b> Service charge paid directly to Driver to the exclusion of TOSDAP CALLED DRIVER makes
+                    such Customer or Driver liable for any consequences for their actions.</p>
 
-                  <p>DATE:………………………………………………………………………………</p>
-                  <p>SIGNATURE:…………………………………………………………………….
-                  </p>
+                    <h5><b><u>FINANCIAL OBLIGATION, REFUND & PAYMENT FOR SHORT-TERM/TEMPORARY SERVICE</u></b></h5>
+                    <ol>
+                      <li>Payment is completed before provision of professional Driver’s availability is
+                        made.</li>
+                      <li>Service charge shall be made upfront through the Company/Service Provider.</li>
+                      <li>The mode of payment is prepaid.</li>
+                      <li>Driver can only resume at appointment when the Client/Customer/Employer has
+                        fulfilled all financial obligation approved to the Company/Service Provider.</li>
+                      <li>Refund is only possible when the Company/Service Provider has failed to meet up
+                        its obligations, or the Client/Customer/Employer is dissatisfied with the service
+                        rendered <b>PROVIDED THAT</b> where the Client/Customer/Employer has been served
+                        by the Company/Service Provider and still wants a refund he shall be entitled to
+                        not more than a <b>50%</b> refund, while where the Company/Service Provider has
+                        not been served at all or expectations are not met or the Client/Customer/Employer
+                        can no longer bear with the Company/Service Provider or the Company/Service
+                        Provider cannot meet up within promised time, as requested by
+                        Client/Customer/Employer, there shall be a refund of not more than <b>75%</b> as
+                        the other <b>25%</b> or more covers cost of mobilization, search and matching.
+                      </li>
+                      <li>Where the Company/Service Provider determines that a refund request is valid,
+                        reasonable efforts shall be made to grant the refund request.</li>
+                      <h5><b><u>CONTRACT POLICY</u></b></h5>
+                      <li>Client/Customer/Employer is required to signify the purpose of the short
+                        term/temporary services expressly.</li>
+                      <li>The Company/Service Provider shall be responsible for paying ALL drivers on its
+                        platform their wages for services carried out.</li>
+                    </ol>
+                    <h5><b><u>DISCOUNT ON SERVICE CHARGE & ALLOWABLE SERVICE</u></b></h5>
+                    <ol>
+                      <li>Client/Customer/Employer can make a <b>50%</b> upfront payment for activation of
+                        service delivery and complete payment after driver’s matching is completed.</li>
+                      <li><b>5%</b> discount is permissible on service charge across board.</li>
+                    </ol>
+
+                    <p>I,.................................OF............................THE USER
+                      (CLIENT/CUSTOMER/EMPLOYER) HEREBY ACKNOWLEDGE TO HAVE READ AND AGREED TO THIS TERMS
+                      AND CONDITIONS OF USE IN USING ………………………………………………………….. (TYPE OF SERVICE) OFFERED
+                      AND RENDERED BY THE COMPANY/SERVICE PROVIDER.</p>
+
+                    <p>DATE:………………………………………………………………………………</p>
+                    <p>SIGNATURE:…………………………………………………………………….
+                    </p>
+                  </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Download</button>
+                  <button typev="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a type="button" class="btn btn-primary" href="./documents/T & C.pdf">Download</a>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
         <div class="wave-bg"></div>
       </header>
@@ -362,14 +388,16 @@
             <h2 class="marker marker-center">Ride With Us</h2>
           </div>
           <div class="text-center">
-            <p class="mx-auto mb-3" style="max-width:800px">Leverage agile frameworks to provide a robust synopsis for
-              high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further
-              the overall value proposition.</p>
+            <p class="mx-auto mb-3" style="max-width:800px">Here's an opportunity to have competent and smart drivers on
+              your wheel. A satisfiable smooth ride to every place of destination anywhere in the country. An assurance
+              of Integrity kept for every deals and contracts. All of these and more are what Tosdap Called Drivers
+              guarantees you and also your organization when you have us as your choice in sourcing out for smart,
+              competent, reliable, and calm drivers</p>
           </div>
         </div>
-        <div class="container justify-content-center">
-          <div class="row py-3">
-            <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up" data-aos-delay="100">
               <div class="border rounded p-3 bg-light mb-3">
                 <div class="text-center text-secondary display-3"><i class="bi bi-palette-fill"></i></div>
                 <h3 class="h4 mt-2">About Us</h3>
@@ -380,18 +408,20 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
-              <div class="border rounded p-3 bg-light mb-3">
-                <div class="text-center text-secondary display-3"><i class="bi bi-chat-left-text-fill"></i></div>
-                <h3 class="h4 mt-2">Mission</h3>
-                <p class="text-small">Is to give you access to an unswerving provision of smart and intellectual drivers
+            <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="border rounded p-3 bg-light mb-3 flex-1 space-between">
+                <div class="text-center text-secondary display-3"><i class="fa fa-bus"></i>
+                  <h3 class="h4 mt-2">Mission</h3>
+                </div>
+
+                <p class="text-small">To give you access to an unswerving provision of smart and intellectual drivers
                   with great worth to enable your smooth movement anytime, anywhere in the country.
                 </p>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
               <div class="border rounded p-3 bg-light mb-3">
-                <div class="text-center text-secondary display-3"><i class="bi bi-calendar-check-fill"></i></div>
+                <div class="text-center text-secondary display-3"><i class="fa fa-eye"></i></div>
                 <h3 class="h4 mt-2">Vision</h3>
                 <p class="text-small">To be the source of choice for individuals and companies in getting wonderful
                   automobilist to handle your wheels
@@ -416,8 +446,14 @@
             <div class="col-lg-6 col-md-7 px-2" data-aos="zoom-in" data-aos-delay="100">
               <div class="h3 mb-2">Let our <strong>Customer Service Team</strong> understand and serve your driving
                 needs.</div>
-              <p class="text-secondary mb-3">We Provide the best customer service experience to our customers giving you
-                fast and stress-less drive to your destinations.</p>
+              <p class="text-secondary mb-3">With Tosdap called driver services where competency and reliability speaks
+                volume. You can be sure to have a smooth ride to and fro anywhere and anytime in the country.
+                It is no news that companies and organizations usually have hard times while sourcing for drivers for
+                the various services they need them for.
+                But with Tosdap called drivers with the mission to give companies and organizations like this access to
+                unswerving provision of smart and intellectual drivers with great worth, having a hard time becomes the
+                thing of the past.
+              </p>
               <div class="row">
                 <div class="col-lg-6 mb-2">
                   <div class="border border-3 rounded px-2 py-2 d-flex align-items-center">
@@ -446,59 +482,13 @@
               </div>
             </div>
           </div>
-          <!-- <div class="row py-3 py-lg-5">
-            <div class="col-lg-6 col-md-5 px-3" data-aos="fade-zoom-in" data-aos-delay="50"
-              data-aos-easing="ease-in-back"><img class="my-3 img-fluid" src="images/illustrations/creative-team.svg"
-                alt="creative-team" /></div>
-            <div class="col-lg-6 col-md-7 px-2" data-aos="zoom-in" data-aos-delay="100">
-              <div class="h3 mb-2">Our <strong>Expert Team</strong> delivers the best result.</div>
-              <p class="text-secondary mb-2">Lorem ipsum dolor sit amet consectetur adipiscing elit primis rutrum,
-                nullam tempor malesuada laoreet tempus blandit pretium etc.</p>
-              <div>
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">Web Design</span><span>90%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">Mobile App</span><span>90%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">Graphic Design</span><span>80%</span>
-                  </div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80"
-                      aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-                <div class="py-1">
-                  <div class="d-flex text-small fw-bolder"><span class="me-auto">Digital
-                      Marketing</span><span>75%</span></div>
-                  <div class="progress my-1">
-                    <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75"
-                      aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
+     
           <div class="row py-3 py-lg-5">
             <div class="col-lg-6 col-md-5 px-3 order-md-last" data-aos="fade-zoom-in" data-aos-delay="50"
               data-aos-easing="ease-in-back"><img class="my-3 img-fluid" src="images/illustrations/work-chat.svg"
                 alt="work-chat" /></div>
             <div class="col-lg-6 col-md-7 px-2" data-aos="zoom-in" data-aos-delay="100">
-              <div class="h3 mb-2">We believe in <strong>Long Term Partnership</strong>.</div>
-              <!-- <p class="text-secondary mb-3">drive safe....In</p> -->
+              <div class="h3 mb-2">We believe in <strong>Long Term Partnership</strong>.</div>              
               <ul class="nav nav-tabs nav-fill" role="tablist">
                 <li class="nav-item" role="presentation"><a class="nav-link p-1 active" aria-current="page"
                     href="#experience" data-bs-toggle="tab"><span class="badge bg-secondary me-1">1</span>
@@ -510,255 +500,126 @@
               </ul>
               <div class="tab-content border border-top-0 text-secondary p-3" id="myTabContent">
                 <div class="tab-pane fade show active" id="experience" role="tabpanel" aria-labelledby="home-tab">
-                  <p>Our experienced and licenced drivers are always ready and available to take care of you.</p>
-                  <p>We keep our customers' lives as top priorities. All our drivers are trained, experienced and
-                    licenced to ensure that you are safe through your tours.</p><a class="fw-bold text-decoration-none"
-                    href="#T&Cmodal">Learn
-                    More<i class="fas fa-arrow-right ms-1"></i></a>
+                  <p>A service with Tosdap makes you feel like the king and queen that you are, as the drivers have been
+                    trained and equipped with all that is needed to be excellent.
+                    So you need not worry about any lapses as effective work is done to ensure utmost satisfaction.
+                  <p>The availability is also very rapid and Affordability is also guaranteed.</p>
                 </div>
                 <div class="tab-pane fade" id="flexibility" role="tabpanel" aria-labelledby="profile-tab">
-                  <p>Leverage on our flexible payment scheme.</p>
+                  <p>You would agree with me that a lot of things have been made easier in our world today and of the
+                    many things is driving services in which Tosdap Called driver stands out. With the amazing services
+                    offered in this company, you can be sure to have a hitch free and trustworthy movement wherever you
+                    want.</p>
                   <p>We provide easy and affordable payment schemes based on the request of our customers. Our price
-                    margin is not high and it's affordable for all age classes.</p><a
-                    class="fw-bold text-decoration-none" href="#T&Cmodal">Learn More<i
-                      class="fas fa-arrow-right ms-1"></i></a>
+                    margin is not high and it's affordable for all age classes.</p>
                 </div>
                 <div class="tab-pane fade" id="results" role="tabpanel" aria-labelledby="contact-tab">
-                  <p>Capitalize on the need to reduce your daily stress from driving activities.</p>
-                  <p>We take care of your journeys by driving you through all your scheduled journeys.</p><a
-                    class="fw-bold text-decoration-none" href="#T&Cmodal">Learn More<i
-                      class="fas fa-arrow-right ms-1"></i></a>
+                  <p>At Tosdap called Drivers there is an assurance of peace and utmost satisfaction while your duties
+                    are carried out for you. </p>
+                  <p>We take care of your journeys by driving you through all your scheduled journeys.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="section py-3 py-lg-5 px-2 px-lg-4" id="clients">
-        <div class="container-narrow">
-          <div class="text-center mb-4">
-            <h2 class="marker marker-center">Trusted By</h2>
-          </div>
-          <div class="text-center">
-            <p class="mx-auto mb-3" style="max-width:800px">Collaboratively administrate empowered markets via
-              plug-and-play networks.</p>
-          </div>
-          <div class="text-center" data-aos="zoom-in-up" data-aos-delay="100">
-            <div class="mx-auto mb-3"> <img class="p-1" src="images/clients/client1.png" /><img class="p-1"
-                src="images/clients/client2.png" /><img class="p-1" src="images/clients/client3.png" /><img class="p-1"
-                src="images/clients/client4.png" /><img class="p-1" src="images/clients/client5.png" /><img class="p-1"
-                src="images/clients/client6.png" /><img class="p-1" src="images/clients/client7.png" /></div>
-          </div>
-        </div>
-      </div>
+
       <div class="section bg-light py-3 py-lg-5 px-2 px-lg-4" id="services">
         <div class="container-narrow">
           <div class="text-center mb-5">
             <h2 class="marker marker-center">Our Services</h2>
           </div>
           <div class="text-center">
-            <p class="mx-auto mb-3" style="max-width:800px">Quickly maximize timely deliverables for real-time schemas.
-              Dramatically maintain clicks-and-mortar solutions without functional solutions.</p>
+            <p class="mx-auto mb-3" style="max-width:800px">Tosdap called Drivers can help meet your transportation needs
+              on a regular or occasional basis and cater to your busy lifestyle and personal preference </p>
           </div>
           <div class="row py-3">
             <div class="col-md-4 text-center mb-3" data-aos="fade-up" data-aos-delay="100">
               <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2"
                   src="images/services/web-design.svg" width="96" height="96" alt="web design" /></div>
               <div class="bg-white border rounded p-3 mt-n4">
-                <div class="h5 mt-3">Pick Up</div>
-                <p class="text-small">Please explain a summary here</p><a class="btn btn-link" href="#!">Learn More<i
-                    class="fas fa-arrow-right ms-1"></i></a>
+                <div class="h5 mt-3">Airport drop-off & Pick Up</div>
+                <a class="btn btn-link" href="https://wa.me/message/FX6LPP6VJ5VZB1" target="_blank">Learn More<i
+                    class="fab fa-whatsapp ms-1" style="font-size:x-large larger; font-weight: 700;"
+                    aria-hidden="true"></i></a>
               </div>
             </div>
             <div class="col-md-4 text-center mb-3" data-aos="fade-up" data-aos-delay="200">
               <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2"
                   src="images/services/graphic-design.svg" width="96" height="96" alt="graphic design" /></div>
               <div class="bg-white border rounded p-3 mt-n4">
-                <div class="h5 mt-3">Drive Through</div>
-                <p class="text-small">Please explain a summary here</p><a class="btn btn-link" href="#!">Learn More<i
-                    class="fas fa-arrow-right ms-1"></i></a>
+                <div class="h5 mt-3">Campus / School Pick Up</div>
+                <a class="btn btn-link" href="https://wa.me/message/FX6LPP6VJ5VZB1" target="_blank">Learn More<i
+                    class="fab fa-whatsapp ms-1" style="font-size:x-large larger; font-weight: 700;"
+                    aria-hidden="true"></i></a>
               </div>
             </div>
             <div class="col-md-4 text-center mb-3" data-aos="fade-up" data-aos-delay="300">
               <div class="bg-white border rounded-circle d-inline-block p-2"><img class="p-2"
                   src="images/services/ui-ux.svg" width="96" height="96" alt="ui-ux" /></div>
               <div class="bg-white border rounded p-3 mt-n4">
-                <div class="h5 mt-3">Groceries Shopping</div>
-                <p class="text-small">Please explain a summary here</p><a class="btn btn-link" href="#!">Learn More<i
-                    class="fas fa-arrow-right ms-1"></i></a>
+                <div class="h5 mt-3">Intra / Inter-State Movement</div>
+                <a class="btn btn-link" href="https://wa.me/message/FX6LPP6VJ5VZB1" target="_blank">Learn More<i
+                    class="fab fa-whatsapp ms-1" style="font-size:x-large larger; font-weight: 700;"
+                    aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- <div class="section bg-secondary text-light py-3 py-lg-5 px-2 px-lg-4" id="stats">
-        <div class="container-narrow">
-          <div class="row px-4">
-            <div class="col-md-3 col-sm-6">
-              <div class="d-flex py-2"><i class="mr-3 fas fa-clipboard-check fa-4x fa-fw"></i>
-                <div class="ms-1">
-                  <div class="h2 mb-1 purecounter" data-purecounter-start="0" data-purecounter-end="325"
-                    data-purecounter-duration="1">325</div>
-                  <div class="h6">Projects Done</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="d-flex py-2"><i class="mr-3 fas fa-smile fa-4x fa-fw"></i>
-                <div class="ms-1">
-                  <div class="h2 mb-1 purecounter" data-purecounter-start="0" data-purecounter-end="145"
-                    data-purecounter-duration="1">145</div>
-                  <div class="h6">Happy Clients</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="d-flex py-2"><i class="mr-3 fas fa-file-alt fa-4x fa-fw"></i>
-                <div class="ms-1">
-                  <div class="h2 mb-1 purecounter" data-purecounter-start="0" data-purecounter-end="464"
-                    data-purecounter-duration="1">464</div>
-                  <div class="h6">Appreciations</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="d-flex py-2"><i class="mr-3 fas fa-clock fa-4x fa-fw"></i>
-                <div class="ms-1">
-                  <div class="h2 mb-1 purecounter" data-purecounter-start="0" data-purecounter-end="8565"
-                    data-purecounter-duration="1">8565</div>
-                  <div class="h6">Support Hours</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div class="section pt-5 pb-3 py-lg-5 px-2 px-lg-4" id="team">
-        <div class="container">
-          <div class="text-center mb-5">
-            <h2 class="marker marker-center">Meet our Team</h2>
-          </div>
-        </div>
-        <div class="carousel carousel-dark slide pb-3" id="carouselTeam" data-bs-ride="carousel" data-aos="zoom-in-up">
-          <div class="container-narrow">
-            <ol class="carousel-indicators">
-              <li class="active" data-bs-target="#carouselTeam" data-bs-slide-to="0" aria-label="Slide 1"></li>
-              <li data-bs-target="#carouselTeam" data-bs-slide-to="1" aria-label="Slide 2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="6000">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="card d-block mb-3"><img class="card-img-top" src="images/team/emp-1.jpg" alt="image" />
-                      <div class="card-body text-center">
-                        <div class="h5 mb-1">Ayanbisi Victor Oludapo</div>
-                        <div class="text-muted mb-1">CEO</div>
-                        <div class="nav text-light justify-content-center"><a class="nav-link" href="#!"
-                            title="Twitter"><i class="fab fa-twitter"></i><span
-                              class="menu-title sr-only">Twitter</span></a><a class="nav-link" href="#!"
-                            title="Facebook"><i class="fab fa-facebook"></i><span
-                              class="menu-title sr-only">Facebook</span></a><a class="nav-link" href="#!"
-                            title="Instagram"><i class="fab fa-instagram"></i><span
-                              class="menu-title sr-only">Instagram</span></a><a class="nav-link" href="#!"
-                            title="LinkedIn"><i class="fab fa-linkedin"></i><span
-                              class="menu-title sr-only">LinkedIn</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card d-block mb-3"><img class="card-img-top" src="images/team/emp-2.jpg" alt="image" />
-                      <div class="card-body text-center">
-                        <div class="h5 mb-1">John Bowman</div>
-                        <div class="text-muted mb-1">Graphic Designer</div>
-                        <div class="nav text-light justify-content-center"><a class="nav-link" href="#!"
-                            title="Twitter"><i class="fab fa-twitter"></i><span
-                              class="menu-title sr-only">Twitter</span></a><a class="nav-link" href="#!"
-                            title="Facebook"><i class="fab fa-facebook"></i><span
-                              class="menu-title sr-only">Facebook</span></a><a class="nav-link" href="#!"
-                            title="Instagram"><i class="fab fa-instagram"></i><span
-                              class="menu-title sr-only">Instagram</span></a><a class="nav-link" href="#!"
-                            title="LinkedIn"><i class="fab fa-linkedin"></i><span
-                              class="menu-title sr-only">LinkedIn</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card d-block mb-3"><img class="card-img-top" src="images/team/emp-3.jpg" alt="image" />
-                      <div class="card-body text-center">
-                        <div class="h5 mb-1">Mark Shaw</div>
-                        <div class="text-muted mb-1">Software Developer</div>
-                        <div class="nav text-light justify-content-center"><a class="nav-link" href="#!"
-                            title="Twitter"><i class="fab fa-twitter"></i><span
-                              class="menu-title sr-only">Twitter</span></a><a class="nav-link" href="#!"
-                            title="Facebook"><i class="fab fa-facebook"></i><span
-                              class="menu-title sr-only">Facebook</span></a><a class="nav-link" href="#!"
-                            title="Instagram"><i class="fab fa-instagram"></i><span
-                              class="menu-title sr-only">Instagram</span></a><a class="nav-link" href="#!"
-                            title="LinkedIn"><i class="fab fa-linkedin"></i><span
-                              class="menu-title sr-only">LinkedIn</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="carousel-item">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="card d-block mb-3"><img class="card-img-top" src="images/team/emp-4.jpg" alt="image" />
-                      <div class="card-body text-center">
-                        <div class="h5 mb-1">Melissa Long</div>
-                        <div class="text-muted mb-1">Software Developer</div>
-                        <div class="nav text-light justify-content-center"><a class="nav-link" href="#!"
-                            title="Twitter"><i class="fab fa-twitter"></i><span
-                              class="menu-title sr-only">Twitter</span></a><a class="nav-link" href="#!"
-                            title="Facebook"><i class="fab fa-facebook"></i><span
-                              class="menu-title sr-only">Facebook</span></a><a class="nav-link" href="#!"
-                            title="Instagram"><i class="fab fa-instagram"></i><span
-                              class="menu-title sr-only">Instagram</span></a><a class="nav-link" href="#!"
-                            title="LinkedIn"><i class="fab fa-linkedin"></i><span
-                              class="menu-title sr-only">LinkedIn</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card d-block mb-3"><img class="card-img-top" src="images/team/emp-5.jpg" alt="image" />
-                      <div class="card-body text-center">
-                        <div class="h5 mb-1">Betty West</div>
-                        <div class="text-muted mb-1">Software Developer</div>
-                        <div class="nav text-light justify-content-center"><a class="nav-link" href="#!"
-                            title="Twitter"><i class="fab fa-twitter"></i><span
-                              class="menu-title sr-only">Twitter</span></a><a class="nav-link" href="#!"
-                            title="Facebook"><i class="fab fa-facebook"></i><span
-                              class="menu-title sr-only">Facebook</span></a><a class="nav-link" href="#!"
-                            title="Instagram"><i class="fab fa-instagram"></i><span
-                              class="menu-title sr-only">Instagram</span></a><a class="nav-link" href="#!"
-                            title="LinkedIn"><i class="fab fa-linkedin"></i><span
-                              class="menu-title sr-only">LinkedIn</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card d-block mb-3"><img class="card-img-top" src="images/team/emp-6.jpg" alt="image" />
-                      <div class="card-body text-center">
-                        <div class="h5 mb-1">Jeremy Little</div>
-                        <div class="text-muted mb-1">Digital Marketing</div>
-                        <div class="nav text-light justify-content-center"><a class="nav-link" href="#!"
-                            title="Twitter"><i class="fab fa-twitter"></i><span
-                              class="menu-title sr-only">Twitter</span></a><a class="nav-link" href="#!"
-                            title="Facebook"><i class="fab fa-facebook"></i><span
-                              class="menu-title sr-only">Facebook</span></a><a class="nav-link" href="#!"
-                            title="Instagram"><i class="fab fa-instagram"></i><span
-                              class="menu-title sr-only">Instagram</span></a><a class="nav-link" href="#!"
-                            title="LinkedIn"><i class="fab fa-linkedin"></i><span
-                              class="menu-title sr-only">LinkedIn</span></a></div>
-                      </div>
-                    </div>
-                  </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
+
+
     </div>
+    <!-- <div class="section pt-5 pb-3 py-lg-5 px-2 px-lg-4" id="team">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="marker marker-center">Meet our Founder</h2>
+        </div>
+      </div>
+      <div class="carousel carousel-dark slide pb-3" id="carouselTeam" data-bs-ride="carousel" data-aos="zoom-in-up">
+        <div class="container-narrow">
+          <ol class="carousel-indicators">
+            <li class="active" data-bs-target="#carouselTeam" data-bs-slide-to="0" aria-label="Slide 1"></li>
+            <li data-bs-target="#carouselTeam" data-bs-slide-to="1" aria-label="Slide 2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="6000">
+              <div class="row">
+                <div class="col"> -->
+                  <!-- <div class="card d-block mb-3"><img class="card-img-top" src="images/team/emp-1.jpg" alt="image" /> -->
+                  <!-- <div class="card-body text-center"> -->
+                  <!-- <div class="h5 mb-1">Ayanbisi Victor Oludapo</div> -->
+                  <!-- <div class="text-muted mb-1">CEO</div> -->
+                  <!-- <div class="nav text-light justify-content-center"><a class="nav-link" href="#!" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a><a class="nav-link" href="#!" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a><a class="nav-link" href="#!" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a><a class="nav-link" href="#!" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></div> -->
+                  <!-- </div> -->
+                  <!-- </div> -->
+                <!-- </div>
+                <div class="col">
+                  <div class="card d-block mb-3"><img class="card-img-top" src="images/team/emp-2.jpg" alt="image" />
+                    <div class="card-body text-center">
+                      <div class="h5 mb-1">Ayanbisi Victor Oludapo</div>
+                      <div class="text-muted mb-1">CEO</div> -->
+                      <!-- <div class="nav text-light justify-content-center"><a class="nav-link" href="#!" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a><a class="nav-link" href="#!" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a><a class="nav-link" href="#!" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a><a class="nav-link" href="#!" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></div> -->
+                <!--     </div>
+                  </div>
+                </div>
+                <div class="col"> -->
+                  <!-- <div class="card d-block mb-3"><img class="card-img-top" src="images/team/emp-3.jpg" alt="image" /> -->
+                  <!-- <div class="card-body text-center"> -->
+                  <!-- <div class="h5 mb-1">Mark Shaw</div> -->
+                  <!-- <div class="text-muted mb-1">Software Developer</div> -->
+                  <!--  -->
+                  <!-- </div> -->
+             <!--    </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+  </div>
+  </div>
   </div>
   <div class="section py-3 py-lg-5 px-2 px-lg-4" id="portfolio">
     <div class="container">
@@ -767,14 +628,14 @@
       </div>
       <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
         <div class="grid-sizer"></div>
-        <div class="grid-item"><a href="https://dribbble.com">
+        <div class="grid-item"><a href="#">
             <figure class="portfolio-item"><img src="images/portfolio/1-small.png" data-bp="images/portfolio/1.jpg" />
               <figcaption>
                 <h4 class="h5 mb-0">Flier</h4>
               </figcaption>
             </figure>
           </a></div>
-        <div class="grid-item"><a href="https://github.com">
+        <div class="grid-item"><a href="#">
             <figure class="portfolio-item"><img src="images/portfolio/2-small.png" data-bp="images/portfolio/2.jpg"
                 data-caption="Example of an optional caption." />
               <figcaption>
@@ -783,289 +644,279 @@
               </figcaption>
             </figure>
           </a></div>
-        <div class="grid-item"><a href="https://soundcloud.com/">
+        <div class="grid-item"><a href="#">
             <figure class="portfolio-item"><img src="images/portfolio/3-small.png" data-bp="images/portfolio/3.jpg"
                 data-caption="Example of an optional caption." />
               <figcaption>
-                <h4 class="h5 mb-0">Audio Mixing</h4>
-                <div>Soundcloud.com</div>
+                <h4 class="h5 mb-0">Flier</h4>
+                <div>Flier</div>
               </figcaption>
             </figure>
           </a></div>
-        <div class="grid-item"><a href="https://www.adobe.com/">
+        <div class="grid-item"><a href="#">
             <figure class="portfolio-item"><img src="images/portfolio/4-small.png" data-bp="images/portfolio/4.jpg" />
               <figcaption>
-                <h4 class="h5 mb-0">Video Editing</h4>
-                <div>Adobe After Effects</div>
+                <h4 class="h5 mb-0">Flier</h4>
+                <div>Flier</div>
               </figcaption>
             </figure>
           </a></div>
-        <div class="grid-item"><a href="https://www.adobe.com/">
-            <figure class="portfolio-item"><img src="images/portfolio/5-small.png" data-bp="images/portfolio/5.jpg" />
-              <figcaption>
-                <h4 class="h5 mb-0">Photography</h4>
-                <div>Adobe Photoshop</div>
-              </figcaption>
-            </figure>
-          </a></div>
-        <div class="grid-item"><a href="https://www.android.com/">
-            <figure class="portfolio-item"><img src="images/portfolio/6-small.png" data-bp="images/portfolio/6.jpg" />
-              <figcaption>
-                <h4 class="h5 mb-0">App Development</h4>
-                <div>Android</div>
-              </figcaption>
-            </figure>
-          </a></div>
-        <div class="grid-item"><a href="https://flutter.dev/">
-            <figure class="portfolio-item"><img src="images/portfolio/7-small.png" data-bp="images/portfolio/7.jpg" />
-              <figcaption>
-                <h4 class="h5 mb-0">App Design</h4>
-                <div>Flutter</div>
-              </figcaption>
-            </figure>
-          </a></div>
-        <div class="grid-item"><a href="https://flutter.dev/">
-            <figure class="portfolio-item"><img src="images/portfolio/8-small.png" data-bp="images/portfolio/8.jpg" />
-              <figcaption>
-                <h4 class="h5 mb-0">App Development</h4>
-                <div>Flutter</div>
-              </figcaption>
-            </figure>
-          </a></div>
+        <!-- <div class="grid-item"><a href="#"> -->
+            <!-- <figure class="portfolio-item"><img src="images/portfolio/11-small.png" data-bp="images/portfolio/" /> -->
+              <!-- <figcaption> -->
+                <!-- <h4 class="h5 mb-0">Flier</h4> -->
+                <!-- <div>Flier</div> -->
+              <!-- </figcaption> -->
+            <!-- </figure> -->
+          <!-- </a></div> -->
+        <!-- <div class="grid-item"><a href="#"> -->
+            <!-- <figure class="portfolio-item"><img src="images/portfolio/13-small.png" data-bp="images/portfolio/13.jpg" /> -->
+              <!-- <figcaption> -->
+                <!-- <h4 class="h5 mb-0">Flier</h4> -->
+                <!-- <div>Flier</div> -->
+              <!-- </figcaption> -->
+            <!-- </figure> -->
+          <!-- </a></div> -->
+        <!-- <div class="grid-item"><a href="#"> -->
+            <!-- <figure class="portfolio-item"><img src="images/portfolio/12-small.png" data-bp="images/portfolio/12.jpg" /> -->
+              <!-- <figcaption> -->
+                <!-- <h4 class="h5 mb-0">Flier</h4> -->
+                <!-- <div>Flier</div> -->
+              <!-- </figcaption> -->
+            <!-- </figure> -->
+          <!-- </a></div> -->
+        <!-- <div class="grid-item"><a href="#"> -->
+            <!-- <figure class="portfolio-item"><img src="images/portfolio/8-small.png" data-bp="images/portfolio/8.jpg" /> -->
+              <!-- <figcaption> -->
+                <!-- <h4 class="h5 mb-0">Flier</h4> -->
+                <!-- <div>Flier</div> -->
+              <!-- </figcaption> -->
+            <!-- </figure> -->
+          <!-- </a></div> -->
       </div>
     </div>
   </div>
-  <div class="section py-3 py-lg-5 px-2 px-lg-4" id="testimonials">
-    <div class="container-narrow">
-      <div class="text-center mb-5">
-        <h2 class="marker marker-center">Client Testimonials</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
-          <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Bring to
-              the table win-win survival strategies to ensure proactive domination. User generated content in
-              real-time will have multiple touchpoints for offshoring.</span></div>
-          <div class="d-flex justify-content-end align-items-end">
-            <div class="text-end me-2">
-              <div class="fw-bolder">Aiyana</div>
-              <div class="text-small">CEO / Specely</div>
-            </div><img class="me-md-3 rounded" src="images/testimonials/client1.jpg" width="96" height="96"
-              alt="client 1" />
-          </div>
-        </div>
-        <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="300">
-          <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Capitalize
-              on low hanging fruit to identify a ballpark value added activity to beta test.
-              Organically grow the holistic world view of disruptive innovation.</span></div>
-          <div class="d-flex justify-content-end align-items-end">
-            <div class="text-end me-2">
-              <div class="fw-bolder">Alexander</div>
-              <div class="text-small">CEO / Combtree</div>
-            </div><img class="me-md-3 rounded" src="images/testimonials/client2.jpg" width="96" height="96"
-              alt="client 1" />
-          </div>
-        </div>
-        <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
-          <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Podcasting
-              operational change management inside of workflows to establish a framework.
-              Taking seamless key performance indicators offline to maximise potential.</span></div>
-          <div class="d-flex justify-content-end align-items-end">
-            <div class="text-end me-2">
-              <div class="fw-bolder">Ariya</div>
-              <div class="text-small">CTO / Softone</div>
-            </div><img class="me-md-3 rounded" src="images/testimonials/client3.jpg" width="96" height="96"
-              alt="client 1" />
-          </div>
-        </div>
-        <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="300">
-          <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span
-              class="m-2">Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
-              procrastinate B2C users after installed base benefits.</span></div>
-          <div class="d-flex justify-content-end align-items-end">
-            <div class="text-end me-2">
-              <div class="fw-bolder">Braiden</div>
-              <div class="text-small">CFO / Markoo</div>
-            </div><img class="me-md-3 rounded" src="images/testimonials/client4.jpg" width="96" height="96"
-              alt="client 1" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
   <div class="section py-3 py-lg-5 px-2 px-lg-4" id="contact">
     <div class="container-narrow">
       <div class="text-center mb-5">
         <h2 class="marker marker-center">Contact Us</h2>
       </div>
       <div class="row">
-        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-          <div class="bg-light my-2 p-3 pt-2">
-
-            <!-- Use flutter for this form -->
-
-            <form action="" method="POST">
+        <div class="col-md-12 col-md-offset-3" data-aos="zoom-in" data-aos-delay="100">
+          <div id="msform">
+            <form action="includes/process.php" class="msform" method="POST">
               <h2>TOSDAP CALLED DRIVER</h2>
               <h5>Driver Request Form</h5>
-              <h6>Part A</h6>
-              <!-- <div class="form-group my-2"> -->
-              <!-- <label for="name" class="form-label fw-bolder">Corporate</label> -->
-              <!-- <div class="form-control">
-                <label for="driverType" class="form-label fw-bolder"> Driver Request Type</label>
-                <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-  <label class="form-check-label" for="inlineRadio1">1</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-  <label class="form-check-label" for="inlineRadio2">2</label>
-</div>
-                
-                <label for="driverType" class="form-label fw-bolder"> Driver Request Type</label>
-                <input type="radio" id="corporate" name="corporate" value="corporate" required>Corporate
-                <input type="radio" id="individual" name="individual" value="individual" required>Individual
-              </div> -->
-              <div class="form-group my-2">
-                <label for="name" class="form-label fw-bolder">Driver Request </label>
-                <div class="form-check form-check-inline">
-               <p><input class="form-check-input" type="radio" name="individual" id="dateofRequest"> Individual </p>
-               </div>
-               <div class="form-check form-check-inline">
-               <p><input class="form-check-input" type="radio" name="corporate" id="dateofRequest"> Corporate </p> 
-               </div> 
-              </div>
-              <div class="form-group my-2">
-                <label for="name" class="form-label fw-bolder">Date of Request</label>
-                <input class="form-control" type="date" name="dateofRequest" id="dateofRequest">
-              </div>
-              <!-- </div> -->
+              <!-- progressbar -->
+              <ul id="progressbar">
+                <li class="active">Personal Details</li>
+                <li>Social Profiles</li>
+                <li>Account Setup</li>
+              </ul>
+              <!-- fieldsets -->
+              <fieldset>
+                <marquee behavior="scroll" direction="left">By filling this form, you are <b>BOOKING</b> for a driver
+                  from Tosdap Called Drivers</marquee>
+                <h2 class="fs-title">Personal Details</h2>
+                <h3 class="fs-subtitle">Tell us something more about you</h3>
+                <div class="form-control my-2">
+                  <label for="requestType" class="form-label fw-bolder justify-content-center text-end">Request
+                    Type</label>
+                  <select name="requestType" id="requestType">
+                    <option value="" selected>Please select an option</option>
+                    <option value="Individual">Individual</option>
+                    <option value="Corporate">Corporate</option>
+                  </select>
+                </div>
+                <div class="form-control my-2">
+                  <label for="dateofRequest" class="form-label fw-bolder justify-content-center text-end">Date of
+                    Request</label>
+                  <input class="form-control" type="date" name="dateOfRequest" id="dateOfRequest" required />
+                </div>
+                <div class="form-control my-2">
+                  <label for="name" class="form-label fw-bolder justify-content-center text-end">Name / Company
+                    Name</label>
+                  <input class="form-control" type="text" name="name" required />
+                </div>
+                <div class="form-control my-2">
+                  <label for="address" class="form-label fw-bolder justify-content-center text-end">Address</label>
+                  <input class="form-control" type="text" name="address" required />
+                </div>
+                <div class="form-control my-2">
+                  <label for="phone" class="form-label fw-bolder justify-content-center text-end">Phone Number</label>
+                  <input class="form-control" type="text" name="phoneNumber" required />
+                </div>
+                <input type="button" name="next" class="next action-button" value="Next" />
+              </fieldset>
 
-              <div class="form-group my-2">
-                <label for="name" class="form-label fw-bolder">Name / Company</label>
-                <input class="form-control" type="text" id="name" name="name" required>
-              </div>
+              <fieldset>
+                <h2 class="fs-title">Nature of Driver Employment</h2>
+                <h3 class="fs-subtitle">Tell us the type of driver profile you want</h3>
 
-              <div class="form-group my-2">
-                <label for="email" class="form-label fw-bolder">Phone Number</label>
-                <input class="form-control" type="tel" id="phoneNumber" name="phoneNumber" maxlength="11" required>
-              </div>
-              <div class="form-group my-2">
-                <label for="message" class="form-label fw-bolder">Address</label>
-                <textarea class="form-control" style="resize: none;" id="address" name="address" rows="2"
-                  required></textarea>
-              </div>
-              <h6>Part B</h6>
-              <p>Nature of Employment</p>
-              <div class="form-group my-2">
-                <label for="staffsRequired" class="form-label fw-bolder"> Staff Required</label>
-                <div class="form-control">
-                  <p><input type="radio" id="staff" name="staff" required> Staff</p>
-                  <p><input type="radio" id="temporary" name="temporary" required> Temporary</p>
+                <div class="form-control my-2">
+                  <label for="termOfService" class="form-label fw-bolder justify-content-center text-end">Term of
+                    Service</label>
+                  <select name="termOfService" id="termOfService">
+                    <option value="" selected>Please select an option</option>
+                    <option value="Temporary">Temporary</option>
+                    <option value="Staff">Staff</option>
+                  </select>
+
                 </div>
-              </div>
-              <div class="form-group my-2">
-                <label for="email" class="form-label fw-bolder">Number of Drivers</label>
-                <input class="form-control" type="number" id="numberofDriver" name="numberofDriver">
-              </div>
-              <div class="form-group my-2">
-                <label for="email" class="form-label fw-bolder">Educational Qualification</label>
-                <div class="form-control">
-                  <p> <input type="radio" id="read_write" name="read_write"> Read and Write</p>
-                  <p><input type="radio" id="SSCE" name="SSCE"> SSCE</p>
+                <div class="form-control my-2">
+                  <label for="educationQualification"
+                    class="form-label fw-bolder justify-content-center text-end">Education
+                    Qualification</label>
+                  <select name="education" id="education">
+                    <option value="" selected>Please select an option</option>
+                    <option value="Read and Write">Read and Write</option>
+                    <option value="SSCE">SSCE</option>
+                    <option value="Graduates">Graduates</option>
+                  </select>
                 </div>
 
-              </div>
-              <div class="form-group my-2">
-                <label for="name" class="form-label fw-bolder">Driver resumption location</label>
-                <input class="form-control" type="text" id="location" name="location" required>
-              </div>
-              <div class="form-group my-2">
-                <label for="working_days" class="form-label fw-bolder">Working Days</label>
-                <div class="form-control">
-                  <p><input type="radio" id="weekdays" name="read_write"> Week days alone</p>
-                  <p><input type="radio" id="weekend" name="weekend"> Weekends alone</p>
-                  <p><input type="radio" id="allweek" name="allWeek"> Monday to Friday + Weekends</p>
+
+                <div class="form-control my-2">
+                  <label for="workingDays" class="form-label fw-bolder justify-content-center text-end">Working
+                    Days</label>
+                  <select name="workingDays" id="workingDays">
+                    <option value="" selected>Please select an option</option>
+                    <option value="Week Days">Week Days</option>
+                    <option value="Weekends">Weekends</option>
+                    <option value="All Days of the Week">All Days of the Week</option>
+                  </select>
                 </div>
-              </div>
-              <div class="form-group my-2">
-                <label for="working_days" class="form-label fw-bolder">How soon do you require a driver</label>
-                <div class="form-control">
-                  <p><input type="radio" id="immediately" name="immediately"> Immediately</p>
-                  <p><input type="radio" id="2weeks" name="2weeks"> 2 Weeks Time</p>
-                  <p><input type="radio" id="1month" name="1month"> 1 Month Time</p>
+
+                <div class="form-control my-2">
+                  <label for="requestTime" class="form-label fw-bolder justify-content-center text-end">Starting
+                    Time</label>
+                  <select name="startingTime" id="startingTime">
+                    <option value="" selected>Please select an option</option>
+                    <option value="Immediately">Immediately</option>
+                    <option value="2 Weeks Time">2 Weeks Time</option>
+                    <option value="1 month Time">1 month Time</option>
+                  </select>
                 </div>
-              </div>
+                <div class="form-control my-2">
+                  <label for="numberOfDriver" class="form-label fw-bolder justify-content-center text-end">Number of
+                    drivers
+                    needed</label>
+                  <input type="number" name="numberOfDrivers" placeholder="Number of Drivers" />
+                </div>
+                <div class="form-control">
+                  <label for="resumptionLocation"
+                    class="form-label fw-bolder justify-content-center text-end">Resumption
+                    Location</label>
+                  <input class="form-control" type="text" name="resumptionLocation" />
+                </div>
+                <div class="form-control my-2">
+                  <label for="paymentRange" class="form-label fw-bolder justify-content-center text-end">Payment
+                    Range</label>
+
+                  <select name="paymentRange" id="paymentRange">
+                    <option value="" selected>Please select an option</option>
+                    <option value="0 - #30,000">0 - #30,000</option>
+                    <option value="#30,000-#60,000">#30,000 - #60,000</option>
+                    <option value="#60,000 - #100,000">#60,000 - #100,000</option>
+                    <option value="#100,000 and above">#100,000 and above</option>
+                  </select>
+                </div>
+                <div class="form-control my-2">
+                  <label for="duration" class="form-label fw-bolder justify-content-center text-end">Work Duration (for
+                    Temporary staff)</label>
+
+                  <select name="workDuration" id="paymentRange">
+                    <option value="" selected>Please select an option</option>
+                    <option value="Less than a month">Less than a month</option>
+                    <option value="Less than 3 months">Less than 3 months</option>
+                    <option value="Less than 6 months">Less than 6 months</option>
+                    <option value="6 months and above">6 months and above</option>
+                  </select>
+                </div>
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+              </fieldset>
+
+              <fieldset>
+                <h2 class="fs-title">Wrapping Up</h2>
+                <h3 class="fs-subtitle">Choice of Driver</h3>
+                <div class="form-control my-2">
+                  <label for="ageRange" class="form-label fw-bolder justify-content-center text-end">Age Range</label>
+                  <select name="ageRange" id="ageRange">
+                    <option value="">Please select an option</option>
+                    <option value="18 - 25 Years">18 - 25 Years</option>
+                    <option value="26 - 32 Years">25 - 32 Years</option>
+                    <option value="33 - 50 Years">33 - 40 Years</option>
+                    <option value="40 years and above">40 Years and above</option>
+                  </select>
+                </div>
+                <div class="form-control my-2">
+                  <label for="nationality"
+                    class="form-label fw-bolder justify-content-center text-end">Nationality</label>
+                  <input class="form-control" type="text" name="nationality" required />
+                </div>
+                <!-- Signature Pad Begins here -->
+                <!-- <div class=" form-control my-2"> -->
+                <!-- <label for="signature" class="form-label fw-bolder justify-content-center text-end">Signature</label> -->
+                <!-- <div class="m-signature-pad--body"> -->
+                <!-- <div id="canvasDiv"></div> -->
+                <!-- <input type="hidden" id="signature" name="signature"> -->
+                <!-- <br> -->
+                <!-- <button type="button" class="btn btn-outline-warning" id="reset-btn">Clear</button> -->
+                <!-- <button type="button" class="btn btn-outline-danger" id="btn-save">Download</button> -->
+                <!-- </div> -->
+                <!-- </div> -->
+
+                <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+              </fieldset>
+            </form>
           </div>
-          <button class="btn btn-primary mt-2" type="submit">Send</button>
-          </form>
+
         </div>
-      </div>
-      <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-        <div class="mt-3 px-2">
-          <div class="h5">Let’s talk how we can help you!</div>
-          <p>If you like to work with us then drop us a message using the contact form.</p>
-          <p>Or get in touch using email, skype or contact number.</p>
-          <p>See you!</p>
-        </div>
-        <div class="mt-5 px-2">
-          <div class="row">
-            <div class="col-sm-2">
-              <div class="pb-1">Email:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">super-agency@company.com</div>
-            </div>
-            <div class="col-sm-2">
-              <div class="pb-1">Skype:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">username@skype.com</div>
-            </div>
-            <div class="col-sm-2">
-              <div class="pb-1">Phone:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">+0718-111-0011</div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
-  </div>
+
+  <!-- contact ends here -->
+
   <footer class="py-5 px-2 bg-light" id="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12 mb-3">
           <div class="mb-3">
-            <div class="h4">Super Agency</div>
-            <p class="text-muted">Leverage agile frameworks to provide a robust synopsis for high level overviews.
+            <div class="h4">
+              <a class="link-dark navbar-brand site-title mb-0" href="#">
+                <img width="40" height="40" class="d-inline-block align-top" src="images/logo/LOGO1.jpeg"
+                  alt="logo"></a>Tosdap
+            </div>
+
+            <p class="text-muted">The best drivers on the steering
             </p>
             <div class="social-nav">
               <nav role="navigation">
                 <ul class="nav text-light">
-                  <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i
+                  <li class="nav-item"><a class="nav-link" href="https://twitter.com/" title="Twitter"><i
                         class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip"
-                      title="Facebook"><i class="fab fa-facebook"></i><span
-                        class="menu-title sr-only">Facebook</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip"
-                      title="Instagram"><i class="fab fa-instagram"></i><span
-                        class="menu-title sr-only">Instagram</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/" title="Facebook"><i
+                        class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/" title="Instagram"><i
+                        class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" title="LinkedIn"><i
                         class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="https://www.behance.net/templateflip"
-                      title="Behance"><i class="fab fa-behance"></i><span class="menu-title sr-only">Behance</span></a>
+
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
+
           <div class="text-small text-muted">
-            <div class="mb-1">&copy; Copyright <strong>Super Agency</strong>. All rights reserved.</div>
-            <div>
-              <!-- Make sure to buy a license for the template before removing the line below. Buy license on https://templateflip.com/ -->Design
-              by <a href="https://templateflip.com/" target="_blank">TemplateFlip</a>
-            </div>
+            <div class="mb-1">&copy; Copyright <strong>Tosdap Drivers</strong>. All rights reserved.</div>
+
           </div>
         </div>
         <div class="col-lg-2 col-md-6 mb-3">
@@ -1081,30 +932,620 @@
               href="#!">Pricing</a></div>
         </div>
         <div class="col-lg-2 col-md-6 mb-3">
-          <div class="text-uppercase mb-2">About</div>
-          <div class="nav flex-column"><a class="nav-link px-0" href="#!">About</a><a class="nav-link px-0"
-              href="#!">Contact</a><a class="nav-link px-0" href="#!">Terms</a><a class="nav-link px-0"
-              href="#!">Privacy</a></div>
+          <div class="text-uppercase mb-2">Forms</div>
+          <div class="nav flex-column my-2">
+            <a class="nav-link px-0" id="applicationModalButton" style="cursor:pointer">Driver's Application</a>
+            <a class="nav-link px-0" id="verificationModalButton" style="cursor:pointer">Driver's Verification</a>
+            <a class="nav-link px-0" id="policyModalButton" style="cursor:pointer">Driver's Policy</a>
+            <a class="nav-link px-0" id="agreementModalButton" style="cursor:pointer"> Driver's Agreement</a>
+
+          </div>
         </div>
         <div class="col-lg-2 col-md-6 mb-3">
           <div class="text-uppercase mb-2">Contact Us</div>
           <div class="text-small">
             <address>
-              568, Hill Road<br />
-              New York, NY 50032<br />
-              United States
+              4, Mandate Junction<br />
+              Ilorin Kwara state,<br />
+              Nigeria
             </address>
-            <div class="mb-1"><strong>Phone:</strong><br />+0718-111-0011</div>
-            <div class="mb-1"><strong>Email:</strong><br />super@company.com</div>
+            <div class="mb-1"><strong>Phone:</strong><br /> <a href="tel:+2348107725001">+234 810 772 5001</a></div>
+            <div class="mb-1"><a href="tel:+2348107725001">+234 907 311 4148</a></div>
+
+
+            <div class="mb-1"><strong>Email:</strong><br /><a href="mailto:">tosdapdrivers@gmail.com</a></div>
           </div>
         </div>
       </div>
     </div>
   </footer>
+  <!-- Application Modal. -->
+  <div id="applicationModal" class="modal" tabindex="-1" aria-labelledby="applicationModalLabel" aria-hidden="true">
+
+    <!-- Modal content -->
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <div class="modal-title justify-content-center" id="exampleModalLabel">
+            <h3><b>TOSDAP CALLED DRIVERS</b></h3>
+            <h5><b>DRIVER APPLICATION FORM</b></h5>
+          </div>
+
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form action="./includes/process.php" class="msform" method="POST">
+            <h3 class="fs-subtitle">By filling thisform, you are applying to be a driver with the Tosdap Called Drivers
+            </h3>
+            <div class="form-control my-2">
+              <label for="name" class="form-label fw-bolder justify-content-center">Name</label>
+              <input class="form-control" type="text" name="name" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="address" class="form-label fw-bolder justify-content-center">Address</label>
+              <input class="form-control" type="text" name="address" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="occupation" class="form-label fw-bolder justify-content-center">Occupation</label>
+              <input class="form-control" type="text" name="occupation" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="educationQualification" class="form-label fw-bolder justify-content-center">Education
+                Qualification</label>
+              <input class="form-control" type="text" name="educationQualification" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="licenceNumber" class="form-label fw-bolder justify-content-center">Driver's Licence
+                Number</label>
+              <input class="form-control" type="text" name="licenceNumber" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="licenceClass" class="form-label fw-bolder justify-content-center">Class of Driver’s
+                license</label>
+              <select name="licenceClass" id="licenceClass">
+                <option value="" selected>Please select an option</option>
+                <option value="Individual">Class A</option>
+                <option value="Individual">Class B</option>
+                <option value="Individual">Class C</option>
+                <option value="Individual">Class D</option>
+                <option value="Individual">Class F</option>
+                <option value="Individual">Class G</option>
+                <option value="Individual">Class H</option>
+                <option value="Individual">Class J</option>
+                <option value="Individual">Class V</option>
+              </select>
+            </div>
+            <div class="form-control my-2">
+              <label for="firstLicence" class="form-label fw-bolder justify-content-center">Date / Year of First
+                Driver’s License</label>
+              <input class="form-control" type="month" name="firstLicence" id="firstLicence" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="professionalExperience" class="form-label fw-bolder justify-content-center">Years of
+                Experience as a Professional Driver</label>
+              <input class="form-control" type="number" name="professionalExperience" id="professionalExperience"
+                required />
+            </div>
+
+            <div class="form-control my-2">
+              <label for="accidentBefore" class="form-label fw-bolder justify-content-center">Have you ever been
+                involved in a road traffic accident as a Driver?</label>
+              <select name="accidentBefore" id="accidentBefore">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>>
+              </select>
+              <label for="accidentDetails" class="form-label fw-bolder justify-content-center">Brief detail & year of
+                accident, if yes</label>
+              <textarea name="accidentDetails" id="accidentDetails" cols="10" rows="5" minlength="20"
+                maxlength="120"></textarea>
+            </div>
+
+            <div class="form-control my-2">
+              <label for="roadOffence" class="form-label fw-bolder justify-content-center">Have you ever been booked or
+                charged for any road traffic offence?</label>
+              <select name="roadOffence" id="roadOffence">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+              <label for="offenceDetails" class="form-label fw-bolder justify-content-center">Brief details & year of
+                the road traffic offence, if yes</label>
+              <textarea name="offenceDetails" id="offenceDetails" cols="10" rows="3" minlength="20"
+                maxlength="120"></textarea>
+            </div>
+
+            <div class="form-control my-2">
+              <label for="alcoholUsage" class="form-label fw-bolder justify-content-center">Do you drink alcohol or use
+                drugs or any intoxicant</label>
+              <select name="alcoholUsage" id="alcoholUsage">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+              <label for="alcoholDetails" class="form-label fw-bolder justify-content-center">If yes, what type:
+              </label>
+              <input type="text" name="alcoholDetails" id="alcoholDetails">
+            </div>
+
+            <div class="form-control my-2">
+              <label for="medicalCondition" class="form-label fw-bolder justify-content-center">Do you have any medical
+                condition</label>
+              <select name="medicalCondition" id="medicalCondition">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+              <label for="medicalConditionNature" class="form-label fw-bolder justify-content-center">Nature of medical
+                condition </label>
+              <input type="text" name="medicalConditionNature" id="medicalConditionNature">
+            </div>
+
+            <div class="form-control my-2">
+              <label for="visualImpairment" class="form-label fw-bolder justify-content-center">Do you have any visual
+                impairment</label>
+              <select name="visualImpairment" id="visualImpairment">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+            </div>
+            <div class="form-control my-2">
+              <label for="medicatedLens" class="form-label fw-bolder justify-content-center">Do you use medicated
+                glasses or lens</label>
+              <select name="medicatedLens" id="medicatedLens">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+            </div>
+            <div class="form-control my-2">
+              <label for="prescribedMedication" class="form-label fw-bolder justify-content-center">Are you on any
+                prescribed medication</label>
+              <select name="prescribedMedication" id="prescribedMedication">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+              <label for="medicationType" class="form-label fw-bolder justify-content-center">If yes, what type of
+                medication</label>
+              <input type="text" name="medicationType" id="medicationType">
+            </div>
+
+            <div class="form-control my-2">
+              <label for="otherInfo" class="form-label fw-bolder justify-content-center">Any other information</label>
+              <textarea name="otherInfo" id="otherInfo" cols="10" rows="3" minlength="20" maxlength="120"></textarea>
+            </div>
+            <input type="checkbox" name="attestation" id="attestation" value="Yes" required>
+            <p>I solemnly affirm that the information supplied above by me. are to the best of my knowledge true and
+              correct and can be verified by TOSDAP CALLED DRIVER.</p>
+
+            <input type="submit" name="driverVerification" class="submit action-button" value="Submit" />
+
+          </form>
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a type="button" class="btn btn-primary" href="./documents/DRIVER's Verification form.pdf">Download</a>
+        </div>
+      </div>
+    </div>
+
   </div>
+
+  <!-- Verification Modal. -->
+  <div id="verificationModal" class="modal" tabindex="-1" aria-labelledby="verificationModalLabel" aria-hidden="true">
+
+    <!-- Modal content -->
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <div class="modal-title" id="exampleModalLabel">
+            <h3><b>TOSDAP CALLED DRIVERS</b></h3>
+            <h5><b>DRIVER VERIFICATION FORM</b></h5>
+          </div>
+
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form action="./includes/process.php" class="msform" method="POST">
+
+
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">Let us know more about you</h3>
+            <div class="form-control my-2">
+              <label for="name" class="form-label fw-bolder justify-content-center">Name</label>
+              <input class="form-control" type="text" name="name" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="address" class="form-label fw-bolder justify-content-center">Address</label>
+              <input class="form-control" type="text" name="address" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="occupation" class="form-label fw-bolder justify-content-center">Occupation</label>
+              <input class="form-control" type="text" name="occupation" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="educationQualification" class="form-label fw-bolder justify-content-center">Education
+                Qualification</label>
+              <input class="form-control" type="text" name="educationQualification" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="licenceNumber" class="form-label fw-bolder justify-content-center">Driver's Licence
+                Number</label>
+              <input class="form-control" type="text" name="licenceNumber" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="licenceClass" class="form-label fw-bolder justify-content-center">Class of Driver’s
+                license</label>
+              <select name="licenceClass" id="licenceClass">
+                <option value="" selected>Please select an option</option>
+                <option value="Individual">Class A</option>
+                <option value="Individual">Class B</option>
+                <option value="Individual">Class C</option>
+                <option value="Individual">Class D</option>
+                <option value="Individual">Class F</option>
+                <option value="Individual">Class G</option>
+                <option value="Individual">Class H</option>
+                <option value="Individual">Class J</option>
+                <option value="Individual">Class V</option>
+              </select>
+            </div>
+            <div class="form-control my-2">
+              <label for="firstLicence" class="form-label fw-bolder justify-content-center">Date / Year of First
+                Driver’s License</label>
+              <input class="form-control" type="month" name="firstLicence" id="firstLicence" required />
+            </div>
+            <div class="form-control my-2">
+              <label for="professionalExperience" class="form-label fw-bolder justify-content-center">Years of
+                Experience as a Professional Driver</label>
+              <input class="form-control" type="number" name="professionalExperience" id="professionalExperience"
+                required />
+            </div>
+
+            <div class="form-control my-2">
+              <label for="accidentBefore" class="form-label fw-bolder justify-content-center">Have you ever been
+                involved in a road traffic accident as a Driver?</label>
+              <select name="accidentBefore" id="accidentBefore">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>>
+              </select>
+              <label for="accidentDetails" class="form-label fw-bolder justify-content-center">Brief detail & year of
+                accident, if yes</label>
+              <textarea name="accidentDetails" id="accidentDetails" cols="10" rows="5" minlength="20"
+                maxlength="120"></textarea>
+            </div>
+
+            <div class="form-control my-2">
+              <label for="roadOffence" class="form-label fw-bolder justify-content-center">Have you ever been booked or
+                charged for any road traffic offence?</label>
+              <select name="roadOffence" id="roadOffence">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+              <label for="offenceDetails" class="form-label fw-bolder justify-content-center">Brief details & year of
+                the road traffic offence, if yes</label>
+              <textarea name="offenceDetails" id="offenceDetails" cols="10" rows="3" minlength="20"
+                maxlength="120"></textarea>
+            </div>
+
+            <div class="form-control my-2">
+              <label for="alcoholUsage" class="form-label fw-bolder justify-content-center">Do you drink alcohol or use
+                drugs or any intoxicant</label>
+              <select name="alcoholUsage" id="alcoholUsage">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+              <label for="alcoholDetails" class="form-label fw-bolder justify-content-center">If yes, what type:
+              </label>
+              <input type="text" name="alcoholDetails" id="alcoholDetails">
+            </div>
+
+            <div class="form-control my-2">
+              <label for="medicalCondition" class="form-label fw-bolder justify-content-center">Do you have any medical
+                condition</label>
+              <select name="medicalCondition" id="medicalCondition">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+              <label for="medicalConditionNature" class="form-label fw-bolder justify-content-center">Nature of medical
+                condition </label>
+              <input type="text" name="medicalConditionNature" id="medicalConditionNature">
+            </div>
+
+            <div class="form-control my-2">
+              <label for="visualImpairment" class="form-label fw-bolder justify-content-center">Do you have any visual
+                impairment</label>
+              <select name="visualImpairment" id="visualImpairment">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+            </div>
+            <div class="form-control my-2">
+              <label for="medicatedLens" class="form-label fw-bolder justify-content-center">Do you use medicated
+                glasses or lens</label>
+              <select name="medicatedLens" id="medicatedLens">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+            </div>
+            <div class="form-control my-2">
+              <label for="prescribedMedication" class="form-label fw-bolder justify-content-center">Are you on any
+                prescribed medication</label>
+              <select name="prescribedMedication" id="prescribedMedication">
+                <option value="" selected>Please select an option</option>
+                <option value="YES">YES</option>
+                <option value="NO">NO</option>
+              </select>
+              <label for="medicationType" class="form-label fw-bolder justify-content-center">If yes, what type of
+                medication</label>
+              <input type="text" name="medicationType" id="medicationType">
+            </div>
+
+            <div class="form-control my-2">
+              <label for="otherInfo" class="form-label fw-bolder justify-content-center">Any other information</label>
+              <textarea name="otherInfo" id="otherInfo" cols="10" rows="3" minlength="20" maxlength="120"></textarea>
+            </div>
+            <input type="checkbox" name="attestation" id="attestation" value="Yes" required>
+            <p>I solemnly affirm that the information supplied above by me. are to the best of my knowledge true and
+              correct and can be verified by TOSDAP CALLED DRIVER.</p>
+
+            <input type="submit" name="driverVerification" class="submit action-button" value="Submit" />
+
+          </form>
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a type="button" class="btn btn-primary" href="./documents/DRIVER's Verification form.pdf">Download</a>
+        </div>
+      </div>
+    </div>
+
   </div>
+
+  <!-- The DRIVER'S Modal -->
+  <div id="policyModal" class="modal" tabindex="-1" aria-labelledby="policyModalLabel" aria-hidden="true">
+    <!-- Modal content -->
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <div class="modal-title" id="exampleModalLabel">
+            <h3><b>TOSDAP CALLED DRIVERS</b></h3>
+            <h5><b>VEHICLE & DRIVERS SAFETY POLICY</b></h5>
+          </div>
+
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form action="includes/process.php" class="msform" method="POST">
+
+            <p class="text-justify" style="font-style: italic;">
+              The purpose of this Policy is to ensure the safety of those individuals who drive an employer’s/company’s
+              vehicle. Vehicle accidents are costly to our company, but more importantly, they may result in injury or
+              loss of life to you or others. It is the driver's responsibility to operate all vehicles in a safe manner
+              and to drive defensively to prevent injuries and property damage. The Company expects each driver to drive
+              in a safe and courteous manner pursuant to the following safety rules. The attitude you take when behind
+              the wheel is the single most important factor in driving safely
+            </p>
+            <ul>
+              <li>
+
+                Drivers must have a valid driver's license for the type of vehicle to be operated, and keep the
+                license(s) with them at all times while driving.
+
+              </li>
+              <li>
+                Employer’s/Company’s vehicles are to be driven by authorized Employee/Driver ONLY, except in
+                emergencies, or in case of repair testing by a mechanic.
+              </li>
+              <li>The use of an Employer’s /Company’s vehicle while under the influence of intoxicants and other drugs
+                is forbidden and is sufficient cause for discipline, including dismissal. </li>
+              <li>
+                All Drivers and passengers operating or riding in an Employer’s/Company’s vehicles must use the seat
+                belts.
+              </li>
+              <li>
+                Avoid over speeding and dangerous overtaking. Obey recommended speed for every route.
+              </li>
+              <li>Obey Road Traffic Rules and Regulations always.</li>
+              <li>Be polite and courteous to Law Enforcement officers be it Military, Police, Road Safety Officers,
+                V.I.O. etc</li>
+              <li>Report any mechanical difficulties or repair needs to your Employer/Company.</li>
+            </ul>
+            <label for="justification" class="form-label fw-bolder justify-content-center text-justify">By filling the
+              preceedin form, you agree to the terms and conditions stated in the TOSDAP CALLED DRIVERS VEHICLE &
+              DRIVERS SAFETY POLICY
+            </label>
+            <input class="form-control" type="text" name="driverName" required placeholder="Enter your name here" />
+            <input class="form-control" type="text" name="licenceNumber" required
+              placeholder="Enter your Licence Number" />
+            <input type="date" name="date" id="date" required>
+            <input type="submit" name="driverPolicy" class="btn btn-primary" value="Submit" />
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a type="button" class="btn btn-primary" href="./documents/Tosdap Drivers Policy.pdf">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The DRIVER'S AGRREEMENT Modal -->
+  <div id="agreementModal" class="modal" tabindex="-1" aria-labelledby="agreementModalLabel" aria-hidden="true">
+    <!-- Modal content -->
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <div class="modal-title" id="exampleModalLabel">
+            <h3 class="text-center"><b>TOSDAP CALLED DRIVERS</b></h3>
+            <p class="btn btn-danger">Please pick and complete a Guarantor form in our office</p>
+
+          </div>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body text-justify">
+          <h3 class="fs-title">Driver's Agreement Form</h3>
+          <form action="includes/process.php" class="msform" method="POST">
+
+            <label for="dateOfRequest" class="form-label fw-bolder justify-content-center text-end">THIS AGREEMENT made
+              on the </label>
+            <div class="form-control my-2">
+              <input class="form-control" type="date" name="dateOfRequest" id="dateOfRequest" required />
+            </div>
+            <label for="officeAddress" class="form-label fw-bolder justify-content-center text-end">Between TOSDAP
+              CALLED
+              DRIVER of...</label>
+            <div class="form-control my-2">
+              <input class="form-control" type="text" name="officeAddress" required
+                value="4, Mandate Junction, Ilorin, Kwara state, Nigeria"
+                placeholder="1, Mandate Road Apalara Area, Ilorin, Kwara state, Nigeria" readonly />
+            </div>
+            <p>(hereinafter referred to as THE
+              COMPANY) of the first part <br><b>AND</b>
+            </p>
+            <div class="form-control my-2">
+              <div class="row">
+                <div class="col-4">
+                  <select name="driverInitial" id="driverInitial" required>
+                    <option selected>Choose...</option>>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs</option>
+                    <option value="Miss.">Miss</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Prof.">Prof.</option>
+                  </select>
+                </div>
+                <div class="col-8">
+                  <input class="form-control" type="text" name="driverName" required
+                    placeholder="Enter your name here" />
+                </div>
+              </div>
+            </div>
+            <p>Of...</p>
+            <div class="form-control my-2">
+              <input class="form-control" type="text" name="driverAddress" required
+                placeholder="Enter your address here" />
+            </div>
+            <p>(hereinafter referred to as
+              THE DRIVER) of the other part</p>
+            <h3>WHEREAS</h3>
+            <ol>
+              <li>The Company is engaged in the business of sourcing and providing professional and competent drivers
+                for its clients/customers within Kwara State and beyond.</li>
+              <li>The Driver is a professional driver willing to work with the Company in accordance with the Company’s
+                policies and guidelines.</li>
+              <li>The Company has agreed to employ the Driver by getting placement for him/her with its client/customer
+                subject to the following terms and conditions.</li>
+            </ol>
+            <h1>NOW THIS AGREEMENT WITNESSES AS FOLLOWS:</h1>
+            <ol>
+              <li><b>THE DRIVER</b> hereby agrees: </li>
+              <ol type="a">
+                <li>
+                  To follow the company policies and procedures while operating the client/customer/employer’s or the
+                  Company’s vehicle.
+                </li>
+                <li>
+                  To always have and keep a valid driver’s license.
+                </li>
+                <li>
+                  To use the safety belt (seat belt) whenever operating a client/customer/employer’s or Company’s
+                  vehicle, or whenever driving for the Company’s business.
+                </li>
+                <li>
+                  To operate vehicles in a courteous manner, irrespective of the behavior of others and drive
+                  defensively in anticipating possible danger or hazards
+                </li>
+                <li>
+                  To never operate any vehicle when impaired by fatigue, medications, drugs, or alcohol in both normal
+                  and emergency situations.
+                </li>
+                <li>
+                  To always check vehicle and adjust safety devices such as mirrors before operating.
+                </li>
+                <li>
+                  To obey all Road Traffic laws, rules, regulations, and Company’s policies.
+                </li>
+                <li>
+                  To be punctual at work, neatly and smartly dressed.
+                </li>
+                <li>
+                  To desist from any form of criminal and/or unethical behaviors.
+                </li>
+                <li>
+                  Not to use the client/customer/employer’s or Company’s vehicle for private or personal nor commercial
+                  business.
+                </li>
+              </ol>
+              <li><b>THE COMPANY</b> hereby agrees: </li>
+              <ol type="a">
+                <li>
+                  To secure placement for the Driver with its client/customer subject to the availability for vacancy
+                  and the clients/customer’s specification.
+                </li>
+                <li>
+                  To ensure the agreed remuneration is paid to the Driver as and when due.
+                </li>
+                <li>
+                  Where the Driver is in breach of any of the Company’ policies or procedures the Company shall be at
+                  liberty to terminate this Agreement without notice or payment in lieu of notice.
+                </li>
+              </ol>
+              <li>
+                Either party may terminate this Agreement by giving months/ weeks notice or salary in lieu of notice.
+              </li>
+            </ol>
+            <p class="text-justify"><b>IN WITNESS OF </b>the
+              Company has caused its common seal to be affixed and the Driver has set his hand and seal the day and year
+              first above mentioned.</p>
+            <h3>In the presense of:</h3>
+
+            <div class="form-control my-2">
+              <label for="guarantorDetails" class="form-label fw-bolder justify-content-center text-center">Guarantor
+                Information</label>
+              <input type="text" name="guarantorName" placeholder="Name of Guarantor" />
+              <input type="text" name="guarantorAddress" placeholder="Address of Guarantor" />
+              <input type="text" name="guarantorOccupation" placeholder="Occupation of Guarantor" />
+            </div>
+            <input type="submit" name="driverAgreement" class="btn btn-primary" value="Submit" />
+          </form>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a type="button" class="btn btn-primary" href="./documents/Tosdap Driver Agreement.pdf">Download</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Form Modals ends here -->
+  <!-- Floating whatsapp -->
+  <div class="floatingWhatsapp">
+    
+    <a class="btn" style="font-size: large;" href="https://wa.me/message/FX6LPP6VJ5VZB1" target="_blank">Chat   <img src="./images/icons/WhatsApp.png" alt="" width="30px" height="30px"></a></div>
+  <!-- Scroll to top -->
   <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i
           class="fas fa-angle-up fa-x"></i></span></a></div>
+
   <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
   <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
   <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
@@ -1112,6 +1553,101 @@
   <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
   <script src="./scripts/aos.min.js?ver=1.2.0"></script>
   <script src="./scripts/main.js?ver=1.2.0"></script>
+  <script src="./scripts/modals.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+  <script type="text/javascript">
+    // Multipage Form
+    //jQuery time
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var left, opacity, scale; //fieldset properties which we will animate
+    var animating; //flag to prevent quick multi-click glitches
+    $(".next").click(function () {
+      if (animating) return false;
+      animating = true;
+      current_fs = $(this).parent();
+      next_fs = $(this).parent().next();
+      //activate next step on progressbar using the index of next_fs
+      $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+      //show the next fieldset
+      next_fs.show();
+      //hide the current fieldset with style
+      current_fs.animate({
+        opacity: 0
+      }, {
+        step: function (now, mx) {
+          //as the opacity of current_fs reduces to 0 - stored in "now"
+          //1. scale current_fs down to 80%
+          scale = 1 - (1 - now) * 0.2;
+          //2. bring next_fs from the right(50%)
+          left = (now * 50) + "%";
+          //3. increase opacity of next_fs to 1 as it moves in
+          opacity = 1 - now;
+          current_fs.css({
+            'transform': 'scale(' + scale + ')',
+            'position': 'absolute'
+          });
+          next_fs.css({
+            'left': left,
+            'opacity': opacity
+          });
+        },
+        duration: 800,
+        complete: function () {
+          current_fs.hide();
+          animating = false;
+        },
+        //this comes from the custom easing plugin
+        easing: 'easeInOutBack'
+      });
+    });
+
+    $(".previous").click(function () {
+      if (animating) return false;
+      animating = true;
+      current_fs = $(this).parent();
+      previous_fs = $(this).parent().prev();
+      //de-activate current step on progressbar
+      $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+      //show the previous fieldset
+      previous_fs.show();
+      //hide the current fieldset with style
+      current_fs.animate({
+        opacity: 0
+      }, {
+        step: function (now, mx) {
+          //as the opacity of current_fs reduces to 0 - stored in "now"
+          //1. scale previous_fs from 80% to 100%
+          scale = 0.8 + (1 - now) * 0.2;
+          //2. take current_fs to the right(50%) - from 0%
+          left = ((1 - now) * 50) + "%";
+          //3. increase opacity of previous_fs to 1 as it moves in
+          opacity = 1 - now;
+          current_fs.css({
+            'left': left
+          });
+          previous_fs.css({
+            'transform': 'scale(' + scale + ')',
+            'opacity': opacity
+          });
+        },
+        duration: 800,
+        complete: function () {
+          current_fs.hide();
+          animating = false;
+        },
+        //this comes from the custom easing plugin
+        easing: 'easeInOutBack'
+      });
+    });
+    $(".submit").click(function () {
+      return true;
+    })
+    // Multipage forms ends here
+  </script>
+  
 </body>
 
 </html>

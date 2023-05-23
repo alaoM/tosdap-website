@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!-- upto 2 directory depth-->
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tosdap</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"
+      />
+    </noscript>
+    <link
+      href="./css/font-awesome/css/all.min.css?ver=1.2.0"
+      rel="stylesheet"
+    />
+    <link
+      href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0"
+      rel="stylesheet"
+    />
+    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet" />
+    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet" />
+    <link href="./css/main.css?ver=1.2.0" rel="stylesheet" />
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+          opacity: 1 !important;
+          transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+
+  <body id="top">
+    <header class="bg-light">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light"
+        id="header-nav"
+        role="navigation"
+      >
+        <div class="container">
+          <a class="link-dark navbar-brand site-title mb-0" href="#"
+            ><img
+              width="40"
+              height="40"
+              class="d-inline-block align-top"
+              src="images/logo/LOGO1.jpeg"
+              alt="logo"
+            />Tosdap</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-2">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Get Started</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="section py-3 py-lg-5 px-2 px-lg-4" id="contact">
+      <div class="container-narrow">
+        <div class="text-center mb-5">
+          <h2 class="marker marker-center">Contact Us</h2>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-9" data-aos="zoom-in" data-aos-delay="100">
+            <div class="bg-light my-2 p-3 pt-2">
+              <form action="" method="POST">
+                <h2>TOSDAP CALLED DRIVER</h2>
+                <h5>Driver Request Form</h5>
+                <h6>Part A</h6>
+                <div class="form-group my-2">
+                  <div class="form-group my-2">
+                    <label for="name" class="form-label fw-bolder"
+                      >Driver Request
+                    </label>
+                    <div class="form-check form-check-inline">
+                      <p>
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="individual"
+                          id="dateofRequest"
+                        />
+                        Individual
+                      </p>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <p>
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="corporate"
+                          id="dateofRequest"
+                        />
+                        Corporate
+                      </p>
+                    </div>
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="name" class="form-label fw-bolder"
+                      >Date of Request</label
+                    >
+                    <input
+                      class="form-control"
+                      type="date"
+                      name="dateofRequest"
+                      id="dateofRequest"
+                    />
+                  </div>
+
+                  <div class="form-group my-2">
+                    <label for="name" class="form-label fw-bolder"
+                      >Name / Company</label
+                    >
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group my-2">
+                    <label for="email" class="form-label fw-bolder"
+                      >Phone Number</label
+                    >
+                    <input
+                      class="form-control"
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      maxlength="11"
+                      required
+                    />
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="message" class="form-label fw-bolder"
+                      >Address</label
+                    >
+                    <textarea
+                      class="form-control"
+                      style="resize: none;"
+                      id="address"
+                      name="address"
+                      rows="2"
+                      required
+                    ></textarea>
+                  </div>
+                  <h6>Part B</h6>
+                  <p>Nature of Employment</p>
+                  <div class="form-group my-2">
+                    <label for="staffsRequired" class="form-label fw-bolder">
+                      Staff Required</label
+                    >
+                    <div class="form-control">
+                      <p>
+                        <input type="radio" id="staff" name="staff" required />
+                        Staff
+                      </p>
+                      <p>
+                        <input
+                          type="radio"
+                          id="temporary"
+                          name="temporary"
+                          required
+                        />
+                        Temporary
+                      </p>
+                    </div>
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="email" class="form-label fw-bolder"
+                      >Number of Drivers</label
+                    >
+                    <input
+                      class="form-control"
+                      type="number"
+                      id="numberofDriver"
+                      name="numberofDriver"
+                    />
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="email" class="form-label fw-bolder"
+                      >Educational Qualification</label
+                    >
+                    <div class="form-control">
+                      <p>
+                        <input type="radio" id="read_write" name="read_write" />
+                        Read and Write
+                      </p>
+                      <p><input type="radio" id="SSCE" name="SSCE" /> SSCE</p>
+                    </div>
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="name" class="form-label fw-bolder"
+                      >Driver resumption location</label
+                    >
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="location"
+                      name="location"
+                      required
+                    />
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="working_days" class="form-label fw-bolder"
+                      >Working Days</label
+                    >
+                    <div class="form-control">
+                      <p>
+                        <input type="radio" id="weekdays" name="read_write" />
+                        Week days alone
+                      </p>
+                      <p>
+                        <input type="radio" id="weekend" name="weekend" />
+                        Weekends alone
+                      </p>
+                      <p>
+                        <input type="radio" id="allweek" name="allWeek" />
+                        Monday to Friday + Weekends
+                      </p>
+                    </div>
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="working_days" class="form-label fw-bolder"
+                      >How soon do you require a driver</label
+                    >
+                    <div class="form-control">
+                      <p>
+                        <input
+                          type="radio"
+                          id="immediately"
+                          name="immediately"
+                        />
+                        Immediately
+                      </p>
+                      <p>
+                        <input type="radio" id="2weeks" name="2weeks" /> 2 Weeks
+                        Time
+                      </p>
+                      <p>
+                        <input type="radio" id="1month" name="1month" /> 1 Month
+                        Time
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <button class="btn btn-primary mt-2" type="submit">
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="py-5 px-2 bg-light" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-3">
+            <div class="mb-3">
+              <div class="h4">
+                <a class="link-dark navbar-brand site-title mb-0" href="#">
+                  <img
+                    width="40"
+                    height="40"
+                    class="d-inline-block align-top"
+                    src="images/logo/LOGO1.jpeg"
+                    alt="logo" /></a
+
+                >Tosdap
+              </div>
+
+              <p class="text-muted">The best drivers on the steering</p>
+              <div class="social-nav">
+                <nav role="navigation">
+                  <ul class="nav text-light">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://twitter.com/"
+                        title="Twitter"
+                        ><i class="fab fa-twitter"></i
+                        ><span class="menu-title sr-only">Twitter</span></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://www.facebook.com/"
+                        title="Facebook"
+                        ><i class="fab fa-facebook"></i
+                        ><span class="menu-title sr-only">Facebook</span></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://www.instagram.com/"
+                        title="Instagram"
+                        ><i class="fab fa-instagram"></i
+                        ><span class="menu-title sr-only">Instagram</span></a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://www.linkedin.com/"
+                        title="LinkedIn"
+                        ><i class="fab fa-linkedin"></i
+                        ><span class="menu-title sr-only">LinkedIn</span></a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="text-small text-muted">
+              <div class="mb-1">
+                &copy; Copyright <strong>Tosdap Drivers</strong>. All rights
+                reserved.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-3">
+            <div class="text-uppercase mb-2">Services</div>
+            <div class="nav flex-column">
+              <a class="nav-link px-0" href="#!">Design</a
+              ><a class="nav-link px-0" href="#!">Development</a
+              ><a class="nav-link px-0" href="#!">Branding</a
+              ><a class="nav-link px-0" href="#!">Marketing</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-3">
+            <div class="text-uppercase mb-2">Products</div>
+            <div class="nav flex-column">
+              <a class="nav-link px-0" href="#!">Services</a
+              ><a class="nav-link px-0" href="#!">Portfolio</a
+              ><a class="nav-link px-0" href="#!">Team</a
+              ><a class="nav-link px-0" href="#!">Pricing</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-3">
+            <div class="text-uppercase mb-2">Forms</div>
+            <div class="nav flex-column my-2">
+              <a
+                class="nav-link px-0"
+                id="applicationModalButton"
+                style="cursor: pointer;"
+                >Driver&nbsp;s Application</a
+              >
+              <a
+                class="nav-link px-0"
+                id="verificationModalButton"
+                style="cursor: pointer;"
+                >Driver&nbsp;s Verification</a
+              >
+              <a
+                class="nav-link px-0"
+                id="policyModalButton"
+                style="cursor: pointer;"
+                >Driver&nbsp;s Policy</a
+              >
+              <a
+                class="nav-link px-0"
+                id="agreementModalButton"
+                style="cursor: pointer;"
+              >
+                Driver&nbsp;s Agreement</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-3">
+            <div class="text-uppercase mb-2">Contact Us</div>
+            <div class="text-small">
+              <address>
+                4, Mandate Junction<br />
+                Ilorin Kwara state,<br />
+                Nigeria
+              </address>
+              <div class="mb-1">
+                <strong>Phone:</strong><br />
+                <a href="tel:+2348107725001">+234 810 772 5001</a>
+              </div>
+              <div class="mb-1">
+                <a href="tel:+2348107725001">+234 907 311 4148</a>
+              </div>
+
+              <div class="mb-1">
+                <strong>Email:</strong><br /><a href="mailto:"
+                  >tosdapdrivers@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="scrolltop">
+      <a class="btn btn-secondary" href="#top"
+        ><span class="icon"><i class="fas fa-angle-up fa-x"></i></span
+      ></a>
+    </div>
+    <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
+    <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
+    <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
+    <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
+    <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="./scripts/aos.min.js?ver=1.2.0"></script>
+    <script src="./scripts/main.js?ver=1.2.0"></script>
+  </body>
+</html>
